@@ -1,0 +1,90 @@
+/*tag模板的css*/
+
+body{
+    background-color: #f3f1eb;
+}
+.pg-header{
+    position: absolute;
+    height: 48px;
+    background: #2459a2;
+    top:0;
+    left: 0;
+    right: 0;
+}
+.header-left{
+    width: 300px;
+    float: left;
+    margin: 0 25px;
+    line-height: 3;
+}
+.header-left .hello{
+    color: white;
+    display: inline-block;
+    line-height: 48px;
+    margin: 0 100px;
+}
+.no_view{
+    display: none;
+}
+.header-left .hello:hover{
+    background-color: blue;
+}
+.header-right{
+    float:right;
+    margin: 0 25px;
+    width: 300px;
+    height: 48px;
+    line-height: 3px;
+}
+.user_info{
+    float: left;
+    margin: 0 auto;
+    color: white;
+    display: inline-block;
+    line-height: 48px;
+}
+.user_center, .user_exit{
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 5px;
+    color: white;
+}
+.user_logo .img{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        padding: 3px 17px;
+}
+.user_center:hover, .user_exit:hover{
+    background-color: blue;
+}
+.pg-body-left{
+    float: left;
+    height: 500px;
+    width: 17%;
+    margin: 45px -8px;
+    padding: 0 7px;
+}
+.pg-body-right{
+    float: right;
+    height: 1000px;
+    width: 81%;
+    margin: 45px -8px 0 0;
+    padding: 0 0 0 20px;
+    background: #e0eaef;
+}
+.menu-select {
+    height: 240px;
+    width: 226px;
+    float: left;
+    background-color: #f5c39b;
+    text-align: center;
+    line-height: 17px;
+    position: relative;
+    padding: 30px 0;
+}
+.menu_font{
+    color: black;
+    font-size: 18px;
+}

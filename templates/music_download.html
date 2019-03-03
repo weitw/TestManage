@@ -1,0 +1,54 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/music-download.css">
+{% endblock %}
+
+{% block home_manage %}
+    <div>
+        <strong>音乐下载须知</strong>
+        <p>1.输入框可以输入音乐名，也可以查询歌手，但是以歌手查找可能结果会有偏差</p>
+        <p>2.点击结果中的歌名，就可以跳转到该音乐平台下该音乐的播放页面</p>
+        <p>3.若出现任何问题，请将信息反馈至<a href="/cmdb/information/">管理员邮箱</a></p>
+    </div><br />
+    <div>
+        <form action="music_download.html" method="post">
+            <label>请输入歌名：</label>
+            <input type="text" placeholder="歌名" name="music_name"/>
+            <select name="search_type">
+                <option value="kg">酷狗音乐搜索</option>
+                <option value="qq">QQ音乐搜索</option>
+            </select>
+            <input type="submit" value="搜索"/>
+        </form>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style="margin: 0 -30px;font-size: 14px">
+        <h4 class="sub-header">为你找到以下内容</h4>
+        <div class="table-responsive">
+            <form action="music_download.html" method="post">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>歌手</th>
+                        <th>歌名</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ InfoHandled.error_msg.error }}  <!--如果这个值存在，说明爬取信息失败，那么久将失败信息给用户-->
+                    {% for song in InfoHandled.song_list %}
+                        <tr>
+                            <td>{{ song.song_index }}</td>
+                            <td>{{ song.singer }}</td>
+                            <td><a href="{{ song.song_url }}" target="_Blank">{{ song.song_name }}</a></td>
+                            <td><input type="submit" value="下载"></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}

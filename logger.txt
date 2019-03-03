@@ -1,0 +1,35 @@
+2019-02-18 11:08:14 $<WSGIRequest: GET '/cmdb/login/'>
+
+2019-02-18 11:09:39 $<WSGIRequest: GET '/cmdb/login/'>
+
+2019-02-18 11:09:39 $<QueryDict: {}>
+<class 'django.http.request.QueryDict'>
+
+2019-02-18 11:12:04 $<WSGIRequest: GET '/cmdb/login/'>
+
+2019-02-18 11:12:04 $<QueryDict: {}>
+
+2019-02-18 11:12:10 $<QueryDict: {'username': ['root'], 'password': ['123456']}>
+
+2019-02-18 11:12:10 ${'SL_GWPT_Show_Hide_tmp': '1', 'BL_D_PROV': '', 'username111': 'dachengzi', 'SL_G_WPT_TO': 'zh-CN', 'SL_wptGlobTipTmp': '1', 'BL_T_PROV': '', 'csrftoken': 'yVvCap8F6oLVTkjN6954wSdCYhod8vIOhX8GOaX153MUxVKHzq8ilknGGHVqvCwP', 'sessionid': 'npu8qf4tldnu8kgfjr9lbpffjotri3yb', 'user_type': 'Root'}
+
+2019-02-18 11:19:14 $127.0.0.1:8000
+
+2019-02-27 00:36:12 $127.0.0.1:8000
+
+2019-02-27 00:36:49 $127.0.0.1:8000
+
+2019-02-28 09:45:30 $127.0.0.1:8000
+
+2019-03-03 12:35:34 $127.0.0.1:8000
+
+2019-03-03 12:35:43 $在MEDIA_DIR中增加了作业>>微机实验一
+
+2019-03-03 12:35:43 $在MEDIA_DIR中增加了作业>>物理实验三
+
+2019-03-03 12:35:43 $在MEDIA_DIR中增加了作业>>生物实验一
+
+2019-03-03 20:56:37 $127.0.0.1:8000
+
+2019-03-03 22:32:45 $管理员下载了作业>>>D:\another\ZIP_TEST\微机实验一.zip
+

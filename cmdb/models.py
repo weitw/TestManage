@@ -1,0 +1,66 @@
+from django.db import models
+
+# Create your models here.
+
+
+class SelfUser(models.Model):
+    """管理员和超级用户的表"""
+    username = models.CharField(max_length=32)
+    password = models.CharField(max_length=32)
+
+
+class OtherUser(models.Model):
+    """普通用户的表"""
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=20)
+
+
+class StudentInfo(models.Model):
+    """学生信息情况，即学生和每次作业提交情况"""
+    stu_num = models.CharField(max_length=10)
+    stu_name = models.CharField(max_length=10)
+
+
+class HashTest(models.Model):
+    """作业和建表字段的使用，例如,test_hash=test1, test_title=微机实验一"""
+    test = models.CharField(max_length=20)
+
+
+class StudentTestInfo(models.Model):
+    """学生作业情况"""
+    test = models.CharField(max_length=60)
+    stu_01 = models.CharField(max_length=5, default="0", null=True)
+    stu_02 = models.CharField(max_length=5, default="0", null=True)
+    stu_03 = models.CharField(max_length=5, default="0", null=True)
+    stu_04 = models.CharField(max_length=5, default="0", null=True)
+    stu_05 = models.CharField(max_length=5, default="0", null=True)
+    stu_06 = models.CharField(max_length=5, default="0", null=True)
+    stu_07 = models.CharField(max_length=5, default="0", null=True)
+    stu_08 = models.CharField(max_length=5, default="0", null=True)
+    stu_09 = models.CharField(max_length=5, default="0", null=True)
+    stu_10 = models.CharField(max_length=5, default="0", null=True)
+    stu_11 = models.CharField(max_length=5, default="0", null=True)
+    stu_12 = models.CharField(max_length=5, default="0", null=True)
+    stu_13 = models.CharField(max_length=5, default="0", null=True)
+    stu_14 = models.CharField(max_length=5, default="0", null=True)
+    stu_15 = models.CharField(max_length=5, default="0", null=True)
+    stu_16 = models.CharField(max_length=5, default="0", null=True)
+    stu_17 = models.CharField(max_length=5, default="0", null=True)
+    stu_18 = models.CharField(max_length=5, default="0", null=True)
+    stu_19 = models.CharField(max_length=5, default="0", null=True)
+    stu_20 = models.CharField(max_length=5, default="0", null=True)
+    stu_21 = models.CharField(max_length=5, default="0", null=True)
+    stu_22 = models.CharField(max_length=5, default="0", null=True)
+    stu_23 = models.CharField(max_length=5, default="0", null=True)
+    stu_24 = models.CharField(max_length=5, default="0", null=True)
+    stu_25 = models.CharField(max_length=5, default="0", null=True)
+    stu_26 = models.CharField(max_length=5, default="0", null=True)
+    stu_27 = models.CharField(max_length=5, default="0", null=True)
+    stu_28 = models.CharField(max_length=5, default="0", null=True)
+    stu_29 = models.CharField(max_length=5, default="0", null=True)
+    stu_30 = models.CharField(max_length=5, default="0", null=True)
+    stu_31 = models.CharField(max_length=5, default="0", null=True)
+    stu_32 = models.CharField(max_length=5, default="0", null=True)
+
+
+
