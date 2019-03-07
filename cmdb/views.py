@@ -4,12 +4,13 @@ from django.db import models
 from django.views import View
 from django.utils.decorators import method_decorator
 from django.http import FileResponse
+# from django.http import StreamingHttpResponse
 from cmdb import models
 import shutil
-import re
+# import re
 import os
 import time
-from another.craw_music import KuGou, QQMusic
+from another.craw_music import KuGou, QQMusic, download
 # Create your views here.
 
 BASE_DIR = os.getcwd()
@@ -39,6 +40,18 @@ def auth(func):
         try:
             if not v:
                 return render(request, 'login.html')
+        except:
+            pass
+        return func(request, *args, **kwargs)
+    return inner
+
+
+def auth_two(func):
+    def inner(request, *args, **kwargs):
+        v = request.COOKIES.get("from_upload")
+        try:
+            if not v:
+                return render("request", "test_upload.html")
         except:
             pass
         return func(request, *args, **kwargs)
@@ -258,12 +271,40 @@ class Upload(View):
                 if stu_cookie in file:
                     the_stu_files.append(file)
             page_msg = kv_msg('uploaded_files', the_stu_files)
-            return render(request, 'test_upload.html', {"InfoHandled": page_msg})
+            response = render(request, 'test_upload.html', {'InfoHandled': page_msg})
+            response.set_cookie('from_upload', "yes", max_age=300)
+            return response
         except:
-            return render(request, 'test_upload.html', {"InfoHandled": page_msg})
+            response = render(request, 'test_upload.html', {'InfoHandled': page_msg})
+            response.set_cookie('from_upload', "yes", max_age=300)
+            return response
 
     def post(self, request):
         page_msg = page_main_msg(request, "作业提交平台")
+        return render(request, 'test_upload.html', {'InfoHandled': page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+@method_decorator(auth_two, name='dispatch')
+class AllowUpload(View):
+    # 显示允许提交的作业列表
+    def get(self, request):
+        page_msg = page_main_msg(request, '作业查看')
+        file_dict = get_test_menu_files()
+        page_msg = kv_msg("file_dict", file_dict)
+        return render(request, "allow_upload.html", {"InfoHandled": page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+@method_decorator(auth_two, name='dispatch')
+class UploadTest(View):
+    # 上传作业
+    def get(self, request):
+        page_msg = page_main_msg(request, '上传作业')
+        return render(request, 'start_upload_test.html', {"InfoHandled": page_msg})
+
+    def post(self, request):
+        page_msg = page_main_msg(request, '上传作业')
         file = request.FILES.get('upload')  # upload使用户选择文件的那个input的name
         try:
             file_dict = get_test_menu_files()
@@ -316,6 +357,18 @@ class Upload(View):
             upload_msg = "作业提交失败，请重新上传"
             page_msg = kv_msg('upload_msg', upload_msg)
             return render(request, 'TestUploadStatus.html', {"InfoHandled": page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+@method_decorator(auth_two, name='dispatch')
+class ShowUploaded(View):
+    def get(self, request):
+        page_msg = page_main_msg(request, '已上传的作业')
+        return render(request, 'show_uploaded_test.html', {"InfoHandled": page_msg})
+
+    def post(self, request):
+        page_msg = page_main_msg(request, '已上传的作业')
+        return render(request, 'show_uploaded_test.html', {"InfoHandled": page_msg})
 
 
 def get_stu_info_in_sql():
@@ -385,15 +438,24 @@ def download_tests(download_test):
 class Manage(View):
 
     def get(self, request):
-        # **********************这儿增加一个自动检测的函数功能*****************************************
-        stu_info_list = get_stu_info_in_sql()  # 包含所有学生所有作业提交的信息
-        page_msg = kv_msg('stu_info', stu_info_list)
-        test_dict = get_test_menu_files()
-        page_msg = kv_msg('menus_files', test_dict)
         page_msg = page_main_msg(request, "作业管理平台")
         return render(request, 'test_manage.html', {"InfoHandled": page_msg})
 
     def post(self, request):
+        page_msg = page_main_msg(request, "作业管理平台")
+        return render(request, 'test_manage.html', {"InfoHandled": page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+class TestList(View):
+    def get(self, request):
+        page_msg = page_main_msg(request, "作业清单")
+        test_dict = get_test_menu_files()
+        page_msg = kv_msg('menus_files', test_dict)
+        return render(request, 'test_list.html', {"InfoHandled": page_msg})
+
+    def post(self, request):
+        page_msg = page_main_msg(request, "作业清单")
         download_menu = request.POST.get('Download_menu')  # 获取管理员选择要下载的作业题目
         # print("要下载的题目:", download_menu)
         if download_menu:
@@ -411,16 +473,29 @@ class Manage(View):
                     logger(["管理员下载了作业>>>{}".format(zip_pack_path)])
                     return response
                 except Exception as err:
-                    logger(["test_manage中的post中出错1>>>{}".format(err)])
-                    return render(request, 'test_manage.html')
+                    logger(["test_list中的post中出错1>>>{}".format(err)])
+                    return render(request, 'test_list.html')
             else:
-                return render(request, 'test_manage.html')
-        return render(request, 'test_manage.html')
+                return render(request, 'test_list.html')
+        return render(request, 'test_list.html', {"InfoHandled": page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+class TestStatus(View):
+    def get(self, request):
+        page_msg = page_main_msg(request, "作业情况")
+        stu_info_list = get_stu_info_in_sql()  # 包含所有学生所有作业提交的信息
+        page_msg = kv_msg('stu_info', stu_info_list)
+        return render(request, 'test_status.html', {"InfoHandled": page_msg})
+
+    def post(self, request):
+        page_msg = page_main_msg(request, "作业情况")
+        return render(request, 'test_status.html', {"InfoHandled": page_msg})
 
 
 @method_decorator(auth, name='dispatch')
 class Download(View):
-
+    """下载音乐"""
     def get(self, request):
         user_ip = request.META.get("REMOTE_ADDR")
         print(user_ip)
@@ -428,44 +503,62 @@ class Download(View):
         return render(request, 'music_download.html', {"InfoHandled": page_msg})
 
     def post(self, request):
-        user_ip = request.META.get("REMOTE_ADDR")
-        print(user_ip)
+        # user_ip = request.META.get("REMOTE_ADDR")
+        # print(user_ip)
         page_msg = page_main_msg(request, 'VIP音乐下载')
         music_name = request.POST.get("music_name")
         search_type = request.POST.get("search_type")
-        song_index = request.POST.get('download')  # 用户选择要下载音乐的序号
-        print(search_type)
+        song_index = request.POST.get('index')  # 用户选择要下载音乐的序号,是一个字符串
         ku_gou = KuGou()  # 实例化
         qq_music = QQMusic()
-        print(music_name, search_type, song_index)
-        if song_index != "":
-            # 说明用户是要下载音乐
-            song_platform = request.POST.get("song_platform")
-            if song_platform == "kg":
-                song_url = ku_gou.download(music_name, song_index)
-                return song_url
-            if song_platform == "qq":
-                song_url = qq_music.download(music_name, song_index)
-                return song_url
-        if music_name != "":
+        if music_name:
             if search_type == "kg":
-                print("酷狗音乐")
-                song_list = ku_gou.get_kg_music_list(music_name)
+                user_request, song_list = ku_gou.get_kg_music_list(music_name)
                 if type(song_list) == dict:
+                    # 如果是字典，说明出错了，那么就把错误信息返回去
                     page_msg = kv_msg("error_msg", song_list)
                     return render(request, "music_download.html", {"InfoHandled": page_msg})
             else:
-                print("QQ音乐")
-                song_list = qq_music.get_qq_music_list(music_name)
+                user_request, song_list = qq_music.get_qq_music_list(music_name)
                 if type(song_list) == dict:
+                    # 如果是字典，说明出错了，那么就把错误信息返回去
                     page_msg = kv_msg("error_msg", song_list)
                     return render(request, "music_download.html", {"InfoHandled": page_msg})
             page_msg = kv_msg("song_list", song_list)
+            page_msg = kv_msg("user_request", user_request)
             return render(request, "music_download.html", {"InfoHandled": page_msg})
+        if song_index:
+            try:
+                # 说明用户是要下载音乐
+                music_name = request.POST.get("remusic_name")
+                platform = request.POST.get("platform")
+                if platform == "kg":
+                    song_url, this_song_name = ku_gou.download(music_name, song_index)
+                    # song_url是要下载音乐的下载链接，this_song_name是要下载音乐的名字
+                    song_save_path = download(song_url, music_name, platform)
+                    file = open(song_save_path, 'rb')
+                    response = FileResponse(file)
+                    response['Content-Type'] = 'application/octet-stream'
+                    response['Content-Disposition'] = 'attachment;filename="music.mp3"'
+                    return response
+                if platform == "qq":
+                    song_url = qq_music.download(music_name, song_index)
+                    song_save_path = download(song_url, music_name, platform)
+                    # print("QQ音乐返回了链接", song_url)
+                    file = open(song_save_path, 'rb')
+                    response = FileResponse(file)
+                    response['Content-Type'] = 'application/octet-stream'
+                    response['Content-Disposition'] = 'attachment;filename="music.m4a"'
+                    # if os.path.isfile(song_save_path):
+                    #     os.remove(song_save_path)
+                    return response
+            except:
+                return render(request, 'music_download.html', {"InfoHandled": page_msg})
         page_msg = kv_msg("error", "搜索内容不能为空")
         return render(request, 'music_download.html', {"InfoHandled": page_msg})
 
 
+@method_decorator(auth, name='dispatch')
 class InforToManager(View):
     def get(self, request):
         print(request)
@@ -474,4 +567,19 @@ class InforToManager(View):
 
     def post(self, request):
         page_msg = page_main_msg(request, '信息反馈')
+        feedback = request.POST.get("reworkmes")
+        feedback_path = os.path.join(BASE_DIR, "another/Feedback/" + request.COOKIES.get('user_type'))
+        if feedback:
+            try:
+                with open(feedback_path+".txt", "a", encoding="utf-8") as f:
+                    f.write(time.strftime("%Y/%m/%d/ %H:%M:%S $ "))
+                    f.write(feedback)
+                    f.write("\n")
+                page_msg = kv_msg("error", "感谢您的反馈，管理员已经收到")
+                return render(request, "feedback.html", {"InfoHandled": page_msg})
+            except:
+                page_msg = kv_msg("error", "反馈失败了")
+                return render(request, "feedback.html", {"InfoHandled": page_msg})
         return render(request, 'information.html', {"InfoHandled": page_msg})
+
+

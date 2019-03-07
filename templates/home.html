@@ -5,33 +5,39 @@
 {% endblock %}
 
 {% block home_manage %}
-        <h3 class="page-header">作业消息</h3>
-        <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder" style="font-size: 18px;">
-                <div>
-                    <h3>通知</h3>
-                </div>
-                <div style="margin: 0 20px;line-height: 25px;">
-                    <strong>待提交的作业</strong><br/>
+    <h3 style="color: blue;">主页中心</h3>
+    <p></p>
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder" style="font-size: 18px;">
+            <strong>待提交的作业</strong><br/>
+            <table class="table table-striped">
+                <tbody>
                     {% for k, v_list in InfoHandled.REPORTS.items %}
                         {% if k == "START" %}
                             {% for row in v_list %}
-                                <li>{{ row }}</li>
+                                <tr>
+                                    <td style="color: limegreen;">{{ row }}</td>
+                                </tr>
                             {% endfor %}
                         {% endif %}
                     {% endfor %}
-                </div>
-                <div style="margin: 5px 20px;line-height: 25px;">
-                    <strong>已结束的作业</strong><br/>
+                </tbody>
+            </table>
+            <strong>已结束的作业</strong>
+            <table class="table table-striped">
+                <tbody>
                     {% for k, v_list in InfoHandled.REPORTS.items %}
                         {% if k == "END" %}
                             {% for row in v_list %}
-                                <li>{{ row }}</li>
+                                <tr>
+                                    <td style="color: firebrick;">{{ row }}</td>
+                                </tr>
                             {% endfor %}
                         {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
+                {% endfor %}
+                </tbody>
+            </table>
         </div>
+    </div>
 
 {% endblock %}

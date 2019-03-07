@@ -1,0 +1,21 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header">允许提交的作业</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tbody>
+                {% for test_menu in InfoHandled.file_dict.keys %}
+                    <tr>
+                        <td>{{ test_menu }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <a href="/cmdb/test_upload/">返回</a>
+{% endblock %}

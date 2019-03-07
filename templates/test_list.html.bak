@@ -1,0 +1,48 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/test_list.css">
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header">作业清单</h3>
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder">
+
+            <div class="upload_files_list">
+            <div class="test_list_title">已提交作业列表</div>
+            <div class="test_list">
+                <div >
+                    <input id="show_2" type="button" onclick="ShowTest('show_stu_tests')" value="显示详细"/>
+                    <input id="cancel_2" type="button" onclick="CancelTest('show_stu_tests')" value="收起"/>
+                </div>
+                <div id="show_stu_tests" class="is_view">
+                    {% for menu, files in InfoHandled.menus_files.items %}
+                        <form action="test_manage.html" method="post">
+                            <div>{{ menu }}</div>
+                            <div>
+                                <input type="button" onclick="ShowTest('students_tests_list{{ menu }}')" value="展开">
+                                <input type="button" onclick="CancelTest('students_tests_list{{ menu }}')" value="收起">
+                                <input type="text" name="Download_menu" value="{{ menu }}" id="DownloadTests{{ menu }}" class="download_tests">
+                                <input type="submit" name="test_title" value="打包并下载" onclick="DownlodTests(DownloadTests{{ menu }})">
+                            </div>
+                            <div id="students_tests_list{{ menu }}" class="is_view">
+                                {% for file in files %}
+                                    <li class="stu_files">{{ file }}<br>
+                                {% endfor %}
+                            </div>
+                        </form>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <a href="/cmdb/test_manage/">返回</a>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/test_list.js"></script>
+{% endblock %}

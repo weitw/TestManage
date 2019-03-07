@@ -1,69 +1,33 @@
 {% extends 'tag.html' %}
 
-
 {% block css-js-file %}
-    <link rel="stylesheet" type="text/css" href="/static/test_manage.css">
+    <link rel="stylesheet" type="text/css" href="/static/test_upload.css">
 {% endblock %}
 
-
 {% block home_manage %}
-    <div class="upload-file-status">
-        <div class="test-status-title">作业提交情况</div>
-        <div class="test_button">
-            <input id="show_1" type="button" onclick="ShowTest('test_status')" value="显示详细"/>
-            <input id="cancel_1" type="button" onclick="CancelTest('test_status')" value="收起"/>
+    <h3 style="color: blue;">作业管理主页</h3>
+    <p></p>
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
+            <img src="/static/笔盒.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <p></p>
+            <p>去这儿查看作业清单吧</p>
+            {% if InfoHandled.user_type == "Ordinary" %}
+                <p style="color: red;">由于您不是管理员，所以无法查看</p>
+            {% else %}
+                <a href="/cmdb/test_list/">GO>></a>
+            {% endif %}
         </div>
-        <div class="table-view is_view" id="test_status" style="position: absolute;left: 270px;">
-            <table border="1" style="font-size: 16px;">
-                <tbody class="tbody-view">
-                {% for stu in InfoHandled.stu_info %}
-                <tr>
-                    {% for item in stu %}
-                        {% if item == '0' %}
-                            <td style="color: red">{{ "未提交" }}</td>
-                        {% elif item == '1' %}
-                            <td style="color: green">{{ "已提交" }}</td>
-                        {% else %}
-                            <td>{{ item }}</td>
-                        {% endif %}
-                    {% endfor %}
-                </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+        <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
+            <img src="/static/窗户.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <p></p>
+            <p>这儿有作业提交情况</p>
+            <a href="/cmdb/test_status/">GO>></a>
         </div>
     </div>
-    <div class="upload_files_list">
-            <div class="test_list_title">已提交作业列表</div>
-            <div class="test_list">
-                <div style="position: absolute;left: 21px;top:40px;">
-                    <input id="show_2" type="button" onclick="ShowTest('show_stu_tests')" value="显示详细"/>
-                    <input id="cancel_2" type="button" onclick="CancelTest('show_stu_tests')" value="收起"/>
-                </div>
-                <div id="show_stu_tests" class="is_view" style="position: absolute;left: 230px;margin: -106px 100px;">
-                    {% for menu, files in InfoHandled.menus_files.items %}
-                        <form action="test_manage.html" method="post">
-                            <div>{{ menu }}</div>
-                            <div>
-                                <input type="button" onclick="ShowTest('students_tests_list{{ menu }}')" value="展开">
-                                <input type="button" onclick="CancelTest('students_tests_list{{ menu }}')" value="收起">
-                                <input type="text" name="Download_menu" value="{{ menu }}" id="DownloadTests{{ menu }}" class="download_tests">
-                                <input type="submit" name="test_title" value="打包并下载" onclick="DownlodTests(DownloadTests{{ menu }})">
-                            </div>
-                            <div id="students_tests_list{{ menu }}" class="is_view">
-                                {% for file in files %}
-                                    <li class="stu_files">{{ file }}<br>
-                                {% endfor %}
-                            </div>
-                        </form>
-                    {% endfor %}
-                </div>
 
-            </div>
-        </div>
 {% endblock %}
 
 {% block js %}
-    <script src="/static/test_manage.js"></script>
-{% endblock %}
 
+{% endblock %}

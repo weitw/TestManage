@@ -3,7 +3,7 @@
 {% block home_manage %}
     <h3>作业提交情况</h3>
     <h4>{{ InfoHandled.upload_msg }}</h4>
-        <form action="{% url 'upload' %}" method="post">
-            <a href="test_upload.html">返回作业上传页</a>
+        <form action="{% url 'start_upload_test' %}" method="post">
+            <a href="/cmdb/upload_test">继续提交作业</a>
         </form>
  {% endblock %}

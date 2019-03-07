@@ -1,0 +1,72 @@
+{% extends 'tag.html' %}
+
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/test_manage.css">
+{% endblock %}
+
+{% block home_manage %}
+    <span class="page-header" style="font-size: 19px">已提交作业列表</span>
+    <div style="margin: 0 10px;display: inline;font-size:13px">
+        <input id="show_2" type="button" onclick="ShowTest('show_stu_tests')" value="<<展开>>" style="background: white;"/>
+        <input id="cancel_2" type="button" onclick="CancelTest('show_stu_tests')" value=">>收起<<" style="background: white;"/>
+    </div><br/>
+    <p></p>
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder">
+            <div id="show_stu_tests" class="is_view">
+                {% for menu, files in InfoHandled.menus_files.items %}
+                    <form action="test_manage.html" method="post">
+                        <div>{{ menu }}</div>
+                        <div>
+                            <input type="button" onclick="ShowTest('students_tests_list{{ menu }}')" value="展开">
+                            <input type="button" onclick="CancelTest('students_tests_list{{ menu }}')" value="收起">
+                            <input type="text" name="Download_menu" value="{{ menu }}" id="DownloadTests{{ menu }}"
+                                   class="download_tests">
+                            <input type="submit" name="test_title" value="打包并下载"
+                                   onclick="DownlodTests(DownloadTests{{ menu }})">
+                        </div>
+                        <div id="students_tests_list{{ menu }}" class="is_view">
+                            {% for file in files %}
+                                <li class="stu_files">{{ file }}<br>
+                            {% endfor %}
+                        </div>
+                    </form>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <span class="sub-header" style="font-size: 19px">作业提交情况</span>
+    <div style="margin: 0 10px;display: inline;font-size:13px">
+        <input id="show_1" type="button" onclick="ShowTest('test_status')" value="<<展开>>" style="background: white;"/>
+        <input id="cancel_1" type="button" onclick="CancelTest('test_status')" value=">>收起<<" style="background: white;"/>
+    </div><br/>
+    <p></p>
+    <div class="table-responsive">
+        <table class="table table-striped" id="test_status">
+            <tbody>
+            {% for stu in InfoHandled.stu_info %}
+                <tr>
+                    {% for item in stu %}
+                        {% if item == '0' %}
+                            <td style="color: red">{{ "未提交" }}</td>
+                        {% elif item == '1' %}
+                            <td style="color: green">{{ "已提交" }}</td>
+                        {% else %}
+                            <td>{{ item }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+    <script src="/static/test_list.js"></script>
+{% endblock %}
+

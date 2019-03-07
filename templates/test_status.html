@@ -1,0 +1,29 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header">作业情况</h3>
+    <div class="table-responsive">
+        <table class="table table-striped" id="test_status">
+            <tbody>
+            {% for stu in InfoHandled.stu_info %}
+                <tr>
+                    {% for item in stu %}
+                        {% if item == '0' %}
+                            <td style="color: red">{{ "未提交" }}</td>
+                        {% elif item == '1' %}
+                            <td style="color: green">{{ "已提交" }}</td>
+                        {% else %}
+                            <td>{{ item }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <a href="/cmdb/test_manage/">返回</a>
+{% endblock %}

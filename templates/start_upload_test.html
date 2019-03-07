@@ -1,0 +1,21 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header">允许提交的作业</h3>
+    <div>
+        <form action="{% url 'start_upload_test' %}" method="post" enctype="multipart/form-data">
+            <input type="file" name="upload" class="select-file" style="background: white;">
+            <p></p>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    <div>
+        <p></p>
+        <a href="/cmdb/test_upload/">返回</a>
+    </div>
+
+{% endblock %}

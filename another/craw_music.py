@@ -2,11 +2,52 @@
 import requests
 import re
 import json
+import os
+
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Ch'
+                         'rome/71.0.3578.80 Safari/537.36'}
+
+
+def download(url, song_name, platform):
+    # proxies = [
+    #     {'http': 'http://' + user_ip},
+    #     {'https': 'https://' + user_ip}
+    # ]
+    try:
+        r = requests.get(url, headers=headers)
+        if r.status_code == 200:
+            save_path = save_music(r.content, song_name, platform)
+            return save_path
+        return None
+    except:
+        return None
+
+
+def save_music(data, song_name, platform):
+    BASE_PATH = os.getcwd()
+    path = os.path.join(BASE_PATH, "another/Music")
+    if platform == "kg":
+        try:
+            save_path = os.path.join(path, song_name + ".mp3")
+            with open(save_path, "wb") as f:
+                f.write(data)
+            return save_path
+        except:
+            return None
+    elif platform == "qq":
+        try:
+            save_path = os.path.join(path, song_name + ".m4a")
+            with open(save_path, "wb") as f:
+                f.write(data)
+            return save_path
+        except:
+            return None
 
 
 class KuGou(object):
 
     def get_kg_music_list(self, music_name):
+        user_request = {"music_name": music_name, "platform": "kg"}  # 用户请求的信息
         url = "http://songsearch.kugou.com/song_search_v2?callback=jQuery112407470964083509348_1534929985284&keyword={}&" \
               "page=1&pagesize=30&userid=-1&clientver=&platform=WebFilter&tag=em&filter=2&iscorrection=1&privilege_filte" \
               "r=0&_=1534929985286".format(music_name)
@@ -21,20 +62,18 @@ class KuGou(object):
         song_list = []
         for i in range(20):
             try:
-                song_index = str(i)
                 song = str(data[i]['FileName']).replace('<em>', '').replace('</em>', '')
                 singer = re.findall('(^.*?)-.*', song)[0].strip()
                 song_url = "https://www.kugou.com/song/#hash={}&album_id={}".format(data[i]['FileHash'], data[i]['AlbumID'])
                 song_name = re.findall('.*-(.*)', song)[0].strip()
                 # song_url = data
-                song_list.append({"song_index": song_index,
+                song_list.append({"song_index": i,
                                   "song_name": song_name,
                                   "singer": singer,
-                                  "song_platform": "kg",
-                                  "song_url": song_url})  # kg是音乐平台
+                                  "song_url": song_url})
             except:
                 return {"status": 0, "error": "Not Found"}
-        return song_list
+        return user_request, song_list
 
     def download(self, music_name, song_index):
         """
@@ -54,20 +93,18 @@ class KuGou(object):
             hash_content = requests.get(hash_url)
             play_url = ''.join(re.findall('"play_url":"(.*?)"', hash_content.text))
             song_url = play_url.replace("\\", "")
-            return song_url
-        except Exception as e:
+            return song_url, music_name
+        except:
             return None
 
 
 class QQMusic(object):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/7'
-                             '1.0.3578.80 Safari/537.36'}
 
     def comment(self, music_name):
         url1 = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp?&t=0&aggr=1' \
                '&cr=1&catZhida=1&lossless=0&flag_qc=0&p=1&n=20&w=' + music_name
         try:
-            response = requests.get(url1, headers=QQMusic.headers)
+            response = requests.get(url1, headers=headers)
             if response.status_code != 200:
                 return "error"
             js_of_rest1 = json.loads(response.text.strip('callback()[]'))
@@ -79,6 +116,7 @@ class QQMusic(object):
         return js_of_rest1
 
     def get_qq_music_list(self, music_name):
+        user_request = {"music_name": music_name, "platform": "qq"}  # 用户请求的信息
         js_of_rest1 = self.comment(music_name)
         singers = []
         song_list = []
@@ -90,19 +128,18 @@ class QQMusic(object):
                 song_list.append({"song_index": count,
                                   "song_name": rest["songname"],
                                   "singer": rest["singer"][0]["name"],
-                                  "song_url": song_url,
-                                  "song_platform": "qq"})
+                                  "song_url": song_url})
                 count += 1
             except:
                 return {"status": 0, "error": "404!"}
-        return song_list
+        return user_request, song_list
 
     def download(self, music_name, song_index):
         song_index = int(song_index)
         js_of_rest1 = self.comment(music_name)
         url2 = 'https://c.y.qq.com/base/fcgi-bin/fcg_music_express_mobile3.fcg?&jsonpCallback=MusicJsonCallback&cid=' \
                '205361747&songmid=' + js_of_rest1[song_index]['songmid'] + '&filename=C400' + js_of_rest1[song_index]['media_mid'] + '.m4a&guid=6612300644'
-        response = requests.get(url2, headers=QQMusic.headers)
+        response = requests.get(url2, headers=headers)
         if response.status_code != 200:
             return {"status": 0, "error": "404!"}
         js_of_rest2 = json.loads(response.text)
@@ -122,13 +159,13 @@ class QQMusic(object):
 #     print(song_u)
 
 
-if __name__ == '__main__':
-    music_name = input(">>")
-    song_l = QQMusic()
-    songs_list = song_l.get_qq_music_list(music_name)
-    print(songs_list)
-    index = input("下载序号>>")
-    song_u = song_l.download(music_name, index)
-    print(song_u)
+# if __name__ == '__main__':
+#     music_name = input(">>")
+#     song_l = QQMusic()
+#     songs_list = song_l.get_qq_music_list(music_name)
+#     print(songs_list)
+#     index = input("下载序号>>")
+#     song_u = song_l.download(music_name, index)
+#     print(song_u)
 
 

@@ -1,0 +1,32 @@
+{% extends 'tag.html' %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/test_list.css">
+    <link rel="stylesheet" type="text/css" href="/static/test_list_easyui.css">
+    <link rel="stylesheet" type="text/css" href="/static/test_list_icon.css">
+    <link rel="stylesheet" type="text/css" href="/static/test_list_demo.css">
+    <script type="text/javascript" src="/static/test_list_jquery.min.js"></script>
+    <script type="text/javascript" src="/static/test_list_jquery.easyui.min.js"></script>
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header" style="margin: 40px 0;">作业清单</h3>
+    <div class="table-responsive">
+        <div style="margin:20px 0 10px 0;"></div>
+        <div class="easyui-accordion" data-options="multiple:true" style="width:500px;">
+            {% for menu, files in InfoHandled.menus_files.items %}
+                <div title="{{ menu }}" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+                    {% for file in files %}
+                        <p>{{ file }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <p></p>
+    <a href="/cmdb/test_manage/">返回</a>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/test_list.js"></script>
+{% endblock %}

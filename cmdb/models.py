@@ -63,4 +63,9 @@ class StudentTestInfo(models.Model):
     stu_32 = models.CharField(max_length=5, default="0", null=True)
 
 
+class UserIP(models.Model):
+    """用户的IP，当他访问时获取，在其下载音乐时调用"""
+    remote_addr = models.CharField(max_length=30)
+
+
 

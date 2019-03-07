@@ -5,6 +5,11 @@
 {% endblock %}
 
 {% block home_manage %}
-    <h4>请将你遇到的问题或者意见或者建议写入下面的输入框内</h4>
-    <textarea name="reworkmes" cols="40" rows="6" style="OVERFLOW: visible"></textarea>
+    <h3 style="color: blue;">意见反馈</h3>
+    <form action="information.html" method="post">
+        <textarea name="reworkmes" cols="40" rows="6" style="OVERFLOW: visible" placeholder="在这儿写下你的想法....."></textarea><br/>
+        <input type="reset" value="重置" style="background: white;"/>
+        <input type="submit" value="提交" style="background: white;"/>
+    </form>
+
 {% endblock %}
