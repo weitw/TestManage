@@ -1,2 +1,1 @@
-# leetcode-learning
-leetcode刷题总结
+python3+django2实现一个作业管理平台
