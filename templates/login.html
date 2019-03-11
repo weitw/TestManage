@@ -2,9 +2,9 @@
 <html lang="en-us" >
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="/static/base.css">
-    <link rel="stylesheet" type="text/css" href="/static/login.css">
-    <link rel="stylesheet" type="text/css" href="/static/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
 </head>
 
 <body class=" login" data-admin-utc-offset="0">
@@ -27,12 +27,12 @@
                 <div class="form-row" style="position: relative;">
                     <label class="required" for="id_username">Username:</label>
                     <input type="text" name="username" autofocus required id="id_username" placeholder="用户名">
-                    <span style="position:absolute;right:8px;top:40px;background-image: url(/static/i_name.jpg);height: 16px;width: 16px;display: inline-block;"></span>
+                    <span style="position:absolute;right:8px;top:40px;background-image: url(/static/icon/i_name.jpg);height: 16px;width: 16px;display: inline-block;"></span>
                 </div>
                 <div class="form-row">
                     <label class="required" for="id_password">Password:</label>
                     <input type="password" name="password" required id="id_password" placeholder="密码"><br>
-                    <span style="position:absolute;right:28px;top:183px;background-image: url(/static/i_pwd.jpg);height: 16px;width: 15px;display: inline-block;"></span>
+                    <span style="position:absolute;right:28px;top:183px;background-image: url(/static/icon/i_pwd.jpg);height: 16px;width: 15px;display: inline-block;"></span>
                     <span style="color: red;">{{ InfoHandled.error_msg }}</span>
                     <!--<input type="hidden" name="next" value="/admin/">-->
                 </div>

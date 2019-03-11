@@ -1,0 +1,13 @@
+.music-bord{
+    max-height: 2000px;
+    background: #8e7e7e;
+    max-width: 1000px;
+    height: 700px;
+    width: 800px;
+}
+.music-head{
+    background: red;
+    max-width: 1000px;
+    height: 50px;
+    width: 800px;
+}

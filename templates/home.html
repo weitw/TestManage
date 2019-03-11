@@ -1,12 +1,18 @@
-{% extends 'tag.html' %}
+<!--主页-->
+
+{% extends 'base.html' %}
 
 {% block css-js-file %}
     <!--  这儿是放置每个页面的CSS或者JS文件的-->
 {% endblock %}
 
+{% block img_tip1 %}
+    <img src="/static/icon/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+{% endblock %}
+
 {% block home_manage %}
     <h3 style="color: blue;">主页中心</h3>
-    <p></p>
+    <div style="margin: 25px 0;"></div>
     <div class="row placeholders">
         <div class="col-xs-6 col-sm-3 placeholder" style="font-size: 18px;">
             <strong>待提交的作业</strong><br/>
@@ -39,5 +45,10 @@
             </table>
         </div>
     </div>
+
+{% endblock %}
+
+{% block js %}
+
 
 {% endblock %}

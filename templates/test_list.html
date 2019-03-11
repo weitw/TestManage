@@ -1,12 +1,19 @@
-{% extends 'tag.html' %}
+<!--作业清单，这是管理员要下载服务器上的文件时的主页面-->
+
+{% extends 'base.html' %}
 
 {% block css-js-file %}
-    <link rel="stylesheet" type="text/css" href="/static/test_list.css">
-    <link rel="stylesheet" type="text/css" href="/static/test_list_easyui.css">
-    <link rel="stylesheet" type="text/css" href="/static/test_list_icon.css">
-    <link rel="stylesheet" type="text/css" href="/static/test_list_demo.css">
-    <script type="text/javascript" src="/static/test_list_jquery.min.js"></script>
-    <script type="text/javascript" src="/static/test_list_jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/esasyui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
+    <script type="text/javascript" src="/static/js/easyui_jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
+
+{% endblock %}
+
+{% block img_tip3 %}
+    <img src="/static/icon/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
 {% endblock %}
 
 {% block home_manage %}
@@ -24,9 +31,22 @@
         </div>
     </div>
     <p></p>
+    <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="文件下载" style="width:100%;max-width:400px;padding:30px 60px;">
+        <form id="ff" method="post">
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="test_name" style="width:100%">
+                    {% for menu in InfoHandled.menus_files.keys %}
+                        <option value="{{ menu }}">{{ menu }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type="submit" value="下载">
+        </form>
+    </div>
     <a href="/cmdb/test_manage/">返回</a>
 {% endblock %}
 
 {% block js %}
-    <script src="/static/test_list.js"></script>
+    <script src="/static/js/test_list.js"></script>
 {% endblock %}

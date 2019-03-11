@@ -1,7 +1,13 @@
-{% extends 'tag.html' %}
+<!--作业管理页面的一个分支，管理员可以在这儿直观的看到作业提交情况，已提交的是绿色，未提交的是红色-->
+
+{% extends 'base.html' %}
 
 {% block css-js-file %}
 
+{% endblock %}
+
+{% block img_tip3 %}
+    <img src="/static/icon/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
 {% endblock %}
 
 {% block home_manage %}

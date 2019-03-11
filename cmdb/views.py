@@ -3,11 +3,12 @@ from django.shortcuts import HttpResponse
 from django.db import models
 from django.views import View
 from django.utils.decorators import method_decorator
+from django.utils.http import urlquote
 from django.http import FileResponse
 # from django.http import StreamingHttpResponse
 from cmdb import models
 import shutil
-# import re
+import re
 import os
 import time
 from another.craw_music import KuGou, QQMusic, download
@@ -456,19 +457,20 @@ class TestList(View):
 
     def post(self, request):
         page_msg = page_main_msg(request, "作业清单")
-        download_menu = request.POST.get('Download_menu')  # 获取管理员选择要下载的作业题目
+        download_menu = request.POST.get('test_name')  # 获取管理员选择要下载的作业题目
         # print("要下载的题目:", download_menu)
         if download_menu:
             zip_pack_path = download_tests(download_menu)
             if zip_pack_path:
                 try:
                     # 若存在，说明返回的是已经打包好的文件路径
-                    # zip_file_name = re.findall(r'ZIP_TEST\\(.*)', zip_pack_path)[0]
+                    zip_file_name = re.findall(r'ZIP_TEST\\(.*)', zip_pack_path)[0]
                     # print('zip_file_name的值（打包的文件名）：>>>', zip_file_name)
                     file = open(zip_pack_path, 'rb')
                     response = FileResponse(file)
                     response['Content-Type'] = 'application/octet-stream'
-                    response['Content-Disposition'] = 'attachment;filename="Test.zip"'
+                    response['Content-Disposition'] = 'attachment;filename={0}'.format(urlquote(zip_file_name))
+                    # response['Content-Disposition'] = 'attachment;filename={0}'.format(zip_file_name.encode('utf-8'))
                     # response['Content-Disposition'] = 'attachment;filename="{}"'.format(zip_file_name)
                     logger(["管理员下载了作业>>>{}".format(zip_pack_path)])
                     return response
@@ -505,57 +507,61 @@ class Download(View):
     def post(self, request):
         # user_ip = request.META.get("REMOTE_ADDR")
         # print(user_ip)
-        page_msg = page_main_msg(request, 'VIP音乐下载')
-        music_name = request.POST.get("music_name")
-        search_type = request.POST.get("search_type")
-        song_index = request.POST.get('index')  # 用户选择要下载音乐的序号,是一个字符串
-        ku_gou = KuGou()  # 实例化
-        qq_music = QQMusic()
-        if music_name:
-            if search_type == "kg":
-                user_request, song_list = ku_gou.get_kg_music_list(music_name)
-                if type(song_list) == dict:
-                    # 如果是字典，说明出错了，那么就把错误信息返回去
-                    page_msg = kv_msg("error_msg", song_list)
-                    return render(request, "music_download.html", {"InfoHandled": page_msg})
-            else:
-                user_request, song_list = qq_music.get_qq_music_list(music_name)
-                if type(song_list) == dict:
-                    # 如果是字典，说明出错了，那么就把错误信息返回去
-                    page_msg = kv_msg("error_msg", song_list)
-                    return render(request, "music_download.html", {"InfoHandled": page_msg})
-            page_msg = kv_msg("song_list", song_list)
-            page_msg = kv_msg("user_request", user_request)
-            return render(request, "music_download.html", {"InfoHandled": page_msg})
-        if song_index:
-            try:
-                # 说明用户是要下载音乐
-                music_name = request.POST.get("remusic_name")
-                platform = request.POST.get("platform")
-                if platform == "kg":
-                    song_url, this_song_name = ku_gou.download(music_name, song_index)
-                    # song_url是要下载音乐的下载链接，this_song_name是要下载音乐的名字
-                    song_save_path = download(song_url, music_name, platform)
-                    file = open(song_save_path, 'rb')
-                    response = FileResponse(file)
-                    response['Content-Type'] = 'application/octet-stream'
-                    response['Content-Disposition'] = 'attachment;filename="music.mp3"'
-                    return response
-                if platform == "qq":
-                    song_url = qq_music.download(music_name, song_index)
-                    song_save_path = download(song_url, music_name, platform)
-                    # print("QQ音乐返回了链接", song_url)
-                    file = open(song_save_path, 'rb')
-                    response = FileResponse(file)
-                    response['Content-Type'] = 'application/octet-stream'
-                    response['Content-Disposition'] = 'attachment;filename="music.m4a"'
-                    # if os.path.isfile(song_save_path):
-                    #     os.remove(song_save_path)
-                    return response
-            except:
-                return render(request, 'music_download.html', {"InfoHandled": page_msg})
-        page_msg = kv_msg("error", "搜索内容不能为空")
-        return render(request, 'music_download.html', {"InfoHandled": page_msg})
+        try:
+            page_msg = page_main_msg(request, 'VIP音乐下载')
+            music_name = request.POST.get("music_name")
+            search_type = request.POST.get("search_type")
+            song_index = request.POST.get('index')  # 用户选择要下载音乐的序号,是一个字符串
+            ku_gou = KuGou()  # 实例化
+            qq_music = QQMusic()
+            print(music_name, search_type, song_index)
+            if music_name:
+                if search_type == "kg":
+                    user_request, song_list = ku_gou.get_kg_music_list(music_name)
+                    if type(song_list) == dict:
+                        # 如果是字典，说明出错了，那么就把错误信息返回去
+                        page_msg = kv_msg("error_msg", song_list)
+                        return render(request, "music_download.html", {"InfoHandled": page_msg})
+                else:
+                    user_request, song_list = qq_music.get_qq_music_list(music_name)
+                    if type(song_list) == dict:
+                        # 如果是字典，说明出错了，那么就把错误信息返回去
+                        page_msg = kv_msg("error_msg", song_list)
+                        return render(request, "music_download.html", {"InfoHandled": page_msg})
+                page_msg = kv_msg("song_list", song_list)
+                page_msg = kv_msg("user_request", user_request)
+                return render(request, "music_download.html", {"InfoHandled": page_msg})
+            if song_index:
+                try:
+                    # 说明用户是要下载音乐
+                    music_name = request.POST.get("remusic_name")
+                    platform = request.POST.get("platform")
+                    if platform == "kg":
+                        song_url, this_song_name = ku_gou.download(music_name, song_index)
+                        # song_url是要下载音乐的下载链接，this_song_name是要下载音乐的名字
+                        song_save_path = download(song_url, music_name, platform)
+                        file = open(song_save_path, 'rb')
+                        response = FileResponse(file)
+                        response['Content-Type'] = 'application/octet-stream'
+                        response['Content-Disposition'] = 'attachment;filename="{0}"'.format(urlquote(this_song_name+".mp3"))
+                        return response
+                    if platform == "qq":
+                        song_url = qq_music.download(music_name, song_index)
+                        song_save_path = download(song_url, music_name, platform)
+                        # print("QQ音乐返回了链接", song_url)
+                        file = open(song_save_path, 'rb')
+                        response = FileResponse(file)
+                        response['Content-Type'] = 'application/octet-stream'
+                        response['Content-Disposition'] = 'attachment;filename="{0}"'.format(music_name+".m4a")
+                        # if os.path.isfile(song_save_path):
+                        #     os.remove(song_save_path)
+                        return response
+                except:
+                    return render(request, 'music_download.html')
+            page_msg = kv_msg("error", "搜索内容不能为空")
+            return render(request, 'music_download.html', {"InfoHandled": page_msg})
+        except:
+            return render(request, 'music_download.html')
 
 
 @method_decorator(auth, name='dispatch')

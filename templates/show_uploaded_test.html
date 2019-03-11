@@ -1,7 +1,13 @@
-{% extends 'tag.html' %}
+<!--用户上传文件只有，可以在这个界面查看到他已经提交过的作业-->
+
+{% extends 'base.html' %}
 
 {% block css-js-file %}
 
+{% endblock %}
+
+{% block img_tip2 %}
+    <img src="/static/icon/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
 {% endblock %}
 
 {% block home_manage %}
