@@ -11,7 +11,7 @@ import shutil
 import re
 import os
 import time
-from another.craw_music import KuGou, QQMusic, download
+from cmdb.craw_music import KuGou, QQMusic, download
 # Create your views here.
 
 BASE_DIR = os.getcwd()
@@ -414,7 +414,7 @@ def download_tests(download_test):
             if menu in download_test:
                 download_menu = menu
                 break
-        zip_test_path = os.path.join(BASE_DIR, '/another/ZIP_TEST')
+        zip_test_path = os.path.join(BASE_DIR, 'another/ZIP_TEST')
         try:
             if not os.path.isdir(zip_test_path):
                 os.mkdir(zip_test_path)
@@ -425,7 +425,7 @@ def download_tests(download_test):
         # print('要打包的文件所在目录', path)
         try:
             zip_files_dir = shutil.make_archive(zip_test_path+'/' + download_test, 'zip', path)  # 返回打包文件的完整路径
-            # logger(["文件打包的路径是>>", zip_files_dir])
+            logger(["文件打包的路径是>>", zip_files_dir])
             return zip_files_dir
         except Exception as e:
             logger(["download_tests打包过程出错1>>{}".format(e)])
@@ -462,6 +462,7 @@ class TestList(View):
         if download_menu:
             zip_pack_path = download_tests(download_menu)
             if zip_pack_path:
+                print(zip_pack_path)
                 try:
                     # 若存在，说明返回的是已经打包好的文件路径
                     zip_file_name = re.findall(r'ZIP_TEST\\(.*)', zip_pack_path)[0]

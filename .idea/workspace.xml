@@ -2,66 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974b4634-82c6-4eed-acfc-5088c6af8582" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/easyui_icon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/passwordbox_open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/tip.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestMange/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestMange/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Music/归途.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/another/Music/归途.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/微机实验一.zip" beforeDir="false" afterPath="$PROJECT_DIR$/another/ZIP_TEST/微机实验一.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/微机实验二.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/craw_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/craw_music.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/accordion_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/accordion_arrows.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/blank.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/commons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/holder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/holder.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/i_name.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/i_name.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/i_pwd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/i_pwd.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ie-emulation-modes-warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ie-emulation-modes-warning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ie10-viewport-bug-workaround.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/ie10-viewport-bug-workaround.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ie10-viewport-bug-workaround.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ie10-viewport-bug-workaround.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/easyui_jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/logo.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/music-download.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/music-download.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ok.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/勾.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/panel_tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/panel_tools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tag.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/esasyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/test_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list_demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/easyui_demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list_easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/start_upload_test_easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list_icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list_jquery.easyui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.easyui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_list_jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/test_upload.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/test_upload.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/作业忘带了.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/作业忘带了.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/吐舌头狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/吐舌头狗.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/田边狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/田边狗.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/窗户.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/窗户.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/笔盒.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icon/笔盒.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/TestUploadStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TestUploadStatus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/easyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/easyui_icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/easyui_icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/esasyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/easyui2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/accordion_arrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/accordion_arrows.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/blank.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/combo_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/combo_arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/i_name.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/i_name.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/i_pwd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/i_pwd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/panel_tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/panel_tools.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/passwordbox_open.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/passwordbox_open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/tip.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/tip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/作业忘带了.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/作业忘带了.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/勾.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/勾.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/吐舌头狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/吐舌头狗.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/田边狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/田边狗.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/窗户.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/窗户.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/笔盒.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/笔盒.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.easyui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.easyui.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/allow_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allow_upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/information.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/music_download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/music_download.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_uploaded_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_uploaded_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/start_upload_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/start_upload_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag1.html.bak" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_list.html.bak" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_list.html.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_manage.html.bak" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_status.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_upload.html" afterDir="false" />
     </list>
@@ -82,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="music_download.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="music_download.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/music_download.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="-8">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="true" />
@@ -98,8 +75,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="80">
+              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -107,11 +84,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMange/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestMange/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="3">
+              <caret line="133" column="104" selection-start-line="133" selection-start-column="104" selection-end-line="133" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -119,23 +105,44 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="560" column="50" lean-forward="true" selection-start-line="560" selection-start-column="50" selection-end-line="560" selection-end-column="50" />
+            <state relative-caret-position="225">
+              <caret line="465" column="20" lean-forward="true" selection-start-line="465" selection-start-column="20" selection-end-line="465" selection-end-column="20" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#643#1013#0" />
+                <element signature="e#1036#1338#0" />
+                <element signature="e#1365#1640#0" />
+                <element signature="e#2969#4365#0" />
+                <element signature="e#15947#16991#0" />
+                <element signature="e#17060#17373#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="craw_music.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/another/craw_music.py">
+      <file leaf-file-name="test_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
-              <folding>
-                <element signature="e#27#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="easyui_jquery.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/easyui_jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="1" column="5520" lean-forward="true" selection-start-line="1" selection-start-column="5520" selection-end-line="1" selection-end-column="5520" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logger.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="125" column="61" selection-start-line="125" selection-start-column="61" selection-end-line="125" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -154,12 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>这是manager_select的内容</find>
-      <find>开始传文件</find>
-      <find>download_tests</find>
-      <find>file_iterator</find>
-      <find>choose_file</find>
-      <find>none_info</find>
       <find>dict</find>
       <find>tuple</find>
       <find>Content</find>
@@ -184,6 +185,12 @@
       <find>easyui-panel</find>
       <find>easyui-combobox</find>
       <find>url</find>
+      <find>shutil</find>
+      <find>test_list中的post中出错1&gt;&gt;&gt;</find>
+      <find>testsit</find>
+      <find>testsite</find>
+      <find>panel-tool-restore</find>
+      <find>static</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/tag.css" />
-        <option value="$PROJECT_DIR$/cmdb/admin.py" />
         <option value="$PROJECT_DIR$/TestManage/settings.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
@@ -206,7 +211,6 @@
         <option value="$PROJECT_DIR$/jjjjjjjj.html" />
         <option value="$PROJECT_DIR$/反反复复.html" />
         <option value="$PROJECT_DIR$/static/test_manage.css" />
-        <option value="$PROJECT_DIR$/cmdb/urls.py" />
         <option value="$PROJECT_DIR$/templates/test_manage2.html.bak" />
         <option value="$PROJECT_DIR$/static/test_manage.js" />
         <option value="$PROJECT_DIR$/cmdb/models.py" />
@@ -237,12 +241,15 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/show_uploaded_test.html" />
         <option value="$PROJECT_DIR$/templates/start_upload_test.html" />
-        <option value="$PROJECT_DIR$/templates/test_list.html" />
         <option value="$PROJECT_DIR$/templates/test_status.html" />
         <option value="$PROJECT_DIR$/templates/test_upload.html" />
-        <option value="$PROJECT_DIR$/TestMange/settings.py" />
-        <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/templates/music_download.html" />
+        <option value="$PROJECT_DIR$/TestMange/settings.py" />
+        <option value="$PROJECT_DIR$/cmdb/urls.py" />
+        <option value="$PROJECT_DIR$/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/static/css/easyui_icon.css" />
+        <option value="$PROJECT_DIR$/static/css/easyui.css" />
+        <option value="$PROJECT_DIR$/templates/test_list.html" />
       </list>
     </option>
   </component>
@@ -255,11 +262,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="152" />
-    <option name="width" value="1505" />
-    <option name="height" value="775" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="384" />
+    <option name="y" value="148" />
+    <option name="width" value="1253" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -297,6 +304,24 @@
             <path>
               <item name="TestMange" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestMange" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestMange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestMange" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestMange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestMange" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestMange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestMange" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,15 +344,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python项目\TestMange\cmdb" />
       <recent name="D:\python项目\TestMange\static" />
       <recent name="D:\python项目\TestMange\static\testsite\css" />
       <recent name="D:\python项目\TestMange\static\testsite\icon" />
       <recent name="D:\python项目\TestMange\static\testsite\js" />
-      <recent name="D:\python项目\TestMange\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python项目\TestMange\static" />
@@ -362,7 +387,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/another/craw_music.py" />
+      <option name="SCRIPT_NAME" value="D:\python项目\TestMange\cmdb\craw_music.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -466,19 +491,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="152" width="1505" height="775" extended-state="0" />
+    <frame x="384" y="148" width="1253" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961783" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.045608107" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.11163522" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.19569893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44607842" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3789127" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18408304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22296731" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.8039216" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -489,7 +515,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.8040541" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,17 +528,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>470</line>
+          <line>471</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>471</line>
+          <line>472</line>
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>469</line>
+          <line>470</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
@@ -521,13 +546,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logger.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/tag1.html.bak" />
     <entry file="file://$PROJECT_DIR$/templates/test_manage.html.bak" />
     <entry file="file://$PROJECT_DIR$/another/Feedback/Ordinary.txt">
@@ -572,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/easyui_jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../jquery-easyui-1.7.0 (1)/jquery.easyui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -590,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/easyui_icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -623,27 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery.easyui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1977">
-          <caret line="17198" column="29" lean-forward="true" selection-start-line="17198" selection-start-column="29" selection-end-line="17198" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/easyui_demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/esasyui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -689,13 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="4" column="33778" selection-start-line="4" selection-start-column="33778" selection-end-line="4" selection-end-column="33778" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/easyui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="1210" column="4" lean-forward="true" selection-start-line="1210" selection-start-column="4" selection-end-line="1210" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -780,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -794,36 +763,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestMange/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestMange/settings.py">
+    <entry file="file://$PROJECT_DIR$/cmdb/craw_music.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/another/craw_music.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="-8">
           <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
           <folding>
             <element signature="e#27#42#0" expanded="true" />
@@ -831,24 +776,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="560" column="50" lean-forward="true" selection-start-line="560" selection-start-column="50" selection-end-line="560" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/music_download.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="-8">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="125" column="61" selection-start-line="125" selection-start-column="61" selection-end-line="125" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMange/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMange/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="133" column="104" selection-start-line="133" selection-start-column="104" selection-end-line="133" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="465" column="20" lean-forward="true" selection-start-line="465" selection-start-column="20" selection-end-line="465" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#643#1013#0" />
+            <element signature="e#1036#1338#0" />
+            <element signature="e#1365#1640#0" />
+            <element signature="e#2969#4365#0" />
+            <element signature="e#15947#16991#0" />
+            <element signature="e#17060#17373#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/panel_tools.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/easyui_icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="71" lean-forward="true" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/easyui2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/easyui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1208">
+          <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/easyui_demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.easyui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="17198" column="29" selection-start-line="17198" selection-start-column="29" selection-end-line="17198" selection-end-column="29" />
+          <folding>
+            <element signature="e#29#35#1" expanded="true" />
+            <element signature="e#44#50#1" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/start_upload_test_easyui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/easyui_jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="1" column="5520" lean-forward="true" selection-start-line="1" selection-start-column="5520" selection-end-line="1" selection-end-column="5520" />
         </state>
       </provider>
     </entry>

@@ -28,7 +28,7 @@
 }
 
 .panel-title {
-    background: url('/static/testsite/icon/blank.gif') no-repeat;
+    background: url('/static/images/blank.gif') no-repeat;
 }
 
 .panel-header-noborder {
@@ -113,27 +113,27 @@
 }
 
 .panel-tool-close {
-    background: url('/static/panel_tools.png') no-repeat -16px 0;
+    background: url('/static/images/panel_tools.png') no-repeat -16px 0;
 }
 
 .panel-tool-min {
-    background: url('/static/panel_tools.png') no-repeat 0 0;
+    background: url('/static/images/panel_tools.png') no-repeat 0 0;
 }
 
 .panel-tool-max {
-    background: url('/static/panel_tools.png') no-repeat 0 -16px;
+    background: url('/static/images/panel_tools.png') no-repeat 0 -16px;
 }
 
 .panel-tool-restore {
-    background: url('/static/panel_tools.png') no-repeat -16px -16px;
+    background: url('/static/images/panel_tools.png') no-repeat -16px -16px;
 }
 
 .panel-tool-collapse {
-    background: url('/static/panel_tools.png') no-repeat -32px 0;
+    background: url('/static/images/panel_tools.png') no-repeat -32px 0;
 }
 
 .panel-tool-expand {
-    background: url('/static/panel_tools.png') no-repeat -32px -16px;
+    background: url('/static/images/panel_tools.png') no-repeat -32px -16px;
 }
 
 .panel-header,
@@ -352,11 +352,11 @@
 }
 
 .accordion-collapse {
-    background: url('/static/testsite/icon/accordion_arrows.png') no-repeat 0 0;
+    background: url('/static/images/accordion_arrows.png') no-repeat 0 0;
 }
 
 .accordion-expand {
-    background: url('/static/testsite/icon/accordion_arrows.png') no-repeat -16px 0;
+    background: url('/static/images/accordion_arrows.png') no-repeat -16px 0;
 }
 
 .accordion {
@@ -1151,7 +1151,7 @@
     left: 0;
     top: 0;
     z-index: 10;
-    background: url('/static/testsite/icon/blank.gif') no-repeat;
+    background: url('/static/images/blank.gif') no-repeat;
 }
 
 .l-btn-disabled .filebox-label {
@@ -1208,7 +1208,7 @@
 }
 
 .combo-arrow {
-    background: url('/static/testsite/icon/combo_arrow.png') no-repeat center center;
+    background: url('/static/images/combo_arrow.png') no-repeat center center;
 }
 
 .combobox-item-disabled {
@@ -3836,14 +3836,14 @@
     position: absolute;
     top: 50%;
     margin-top: -8px;
-    background: url('/static/testsite/icon/accordion_arrows.png') no-repeat 0 0;
+    background: url('/static/images/accordion_arrows.png') no-repeat 0 0;
     width: 16px;
     height: 16px;
     right: 5px;
 }
 
 .sidemenu .tree-node-nonleaf-collapsed::after {
-    background: url('/static/testsite/icon/accordion_arrows.png') no-repeat -16px 0;
+    background: url('/static/images/accordion_arrows.png') no-repeat -16px 0;
 }
 
 .sidemenu-collapsed .panel-icon {

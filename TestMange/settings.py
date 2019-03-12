@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'TestMange.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_manage',
+        'NAME': 'test_manage',  # 数据库名
         'USER': 'root',
-        'PASSWORD': os.environ['DATABASE_PASSWORD'],
+        'PASSWORD': os.environ['DATABASE_PASSWORD'],  # DATABASE_PASSWORD是数据库密码，已经添加在环境变量中了
         # 'PASSWORD': PASSWORD,
         'HOST': 'localhost',
         'PORT': '',
@@ -131,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
+STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')  # 部署到服务器上后执行python manage.py colletstatic得到的静态文件的收集路径
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
