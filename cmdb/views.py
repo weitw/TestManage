@@ -418,7 +418,7 @@ def download_tests(download_test):
         try:
             if not os.path.isdir(zip_test_path):
                 os.mkdir(zip_test_path)
-            logger(["创建了目录>>{}".format(zip_test_path)])
+                logger(["创建了目录>>{}".format(zip_test_path)])
         except:
             pass
         path = os.path.join(MEDIA_DIR, download_menu)
@@ -461,12 +461,13 @@ class TestList(View):
         # print("要下载的题目:", download_menu)
         if download_menu:
             zip_pack_path = download_tests(download_menu)
+            logger(["要下载的文件打包的绝对路径zip_pack_path>>{}".format(zip_pack_path)])
             if zip_pack_path:
                 print(zip_pack_path)
                 try:
                     # 若存在，说明返回的是已经打包好的文件路径
-                    zip_file_name = re.findall(r'ZIP_TEST\\(.*)', zip_pack_path)[0]
-                    # print('zip_file_name的值（打包的文件名）：>>>', zip_file_name)
+                    zip_file_name = re.findall(r'.*ZIP_TEST\\(.*)', zip_pack_path)[0]
+                    logger(['zip_file_name的值（打包的文件名）：>>>', zip_file_name])
                     file = open(zip_pack_path, 'rb')
                     response = FileResponse(file)
                     response['Content-Type'] = 'application/octet-stream'

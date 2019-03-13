@@ -165,3 +165,15 @@ D:\python项目\TestMange\another\ZIP_TEST\物理实验三.zip
 
 2019-03-12 14:46:16 $127.0.0.1:8000
 
+2019-03-14 00:19:54 $127.0.0.1:8000
+
+2019-03-14 00:20:10 $创建了目录>>D:\python项目\TestMange\another/ZIP_TEST
+
+2019-03-14 00:20:10 $文件打包的路径是>>
+D:\python项目\TestMange\another\ZIP_TEST\微机实验一.zip
+
+2019-03-14 00:20:10 $zip_file_name的值（打包的文件名）：>>>
+微机实验一.zip
+
+2019-03-14 00:20:10 $管理员下载了作业>>>D:\python项目\TestMange\another\ZIP_TEST\微机实验一.zip
+
