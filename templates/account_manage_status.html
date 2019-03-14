@@ -1,0 +1,39 @@
+<!--用户在这个页面上传他的文件-->
+
+{% extends 'base.html' %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
+{% endblock %}
+
+<!--    """返回到前端的page_msg
+        status="1":修改成功,
+        status="0":当前密码不正确，
+        status="-1":两次密码不一致，
+        status="2":程序出错。
+        """-->
+
+{% block img_tip2 %}
+    <img src="/static/images/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+{% endblock %}
+{% block home_manage %}
+    <h3 style="color: blue;margin: 40px 0;">密码修改情况</h3>
+    {% if InfoHandled.status == "1" %}
+        <h4 style="color: red;">密码修改成功</h4>
+    {% elif InfoHandled.status == "0" %}
+        <h4 style="color: red;">当前密码不正确</h4>
+    {% elif InfoHandled.status == "-1" %}
+        <h4 style="color: red;">两次输入的密码不一致</h4>
+    {% else %}
+        <h4 style="color: red;">修改密码失败,请联系管理员</h4>
+    {% endif %}
+    <div>
+        <p></p>
+        <a href="/cmdb/home/">回到主页</a>
+    </div>
+
+{% endblock %}

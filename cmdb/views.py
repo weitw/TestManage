@@ -272,6 +272,7 @@ def get_all_files():
     return file_list
 
 
+# 作业提交主页
 @method_decorator(auth, name='dispatch')  # 增加这句，说明所有用户都必须登录才能提交作业
 class Upload(View):
     def get(self, request):
@@ -301,6 +302,7 @@ class Upload(View):
         return render(request, 'test_upload.html', {'InfoHandled': page_msg})
 
 
+# 允许提交的作业
 @method_decorator(auth, name='dispatch')
 # @method_decorator(auth_two, name='dispatch')
 class AllowUpload(View):
@@ -312,6 +314,7 @@ class AllowUpload(View):
         return render(request, "allow_upload.html", {"InfoHandled": page_msg})
 
 
+# 提交作业页
 @method_decorator(auth, name='dispatch')
 # @method_decorator(auth_two, name='dispatch')
 class UploadTest(View):
@@ -376,6 +379,7 @@ class UploadTest(View):
             return render(request, 'TestUploadStatus.html', {"InfoHandled": page_msg})
 
 
+# 显示已经提交过的作业
 @method_decorator(auth, name='dispatch')
 # @method_decorator(auth_two, name='dispatch')
 class ShowUploaded(View):
@@ -388,6 +392,7 @@ class ShowUploaded(View):
         return render(request, 'show_uploaded_test.html', {"InfoHandled": page_msg})
 
 
+# 得到数据库中的信息，用于显示用户作业状态
 def get_stu_info_in_sql():
     """获取数据库userinfo中cmdb_studentinfo表的信息，并将这些信息打包返回"""
     try:
@@ -421,6 +426,7 @@ def get_stu_info_in_sql():
         return None
 
 
+# 将管理员要下载的文件打包
 def download_tests(download_test):
     """ download_test管理员选择的要打包下载的作业题目，比如'微机实验二' """
     try:
@@ -451,6 +457,7 @@ def download_tests(download_test):
         return None
 
 
+# 管理主页
 @method_decorator(auth, name='dispatch')
 class Manage(View):
 
@@ -463,6 +470,7 @@ class Manage(View):
         return render(request, 'test_manage.html', {"InfoHandled": page_msg})
 
 
+# 作业清单，管理员可下载
 @method_decorator(auth, name='dispatch')
 @method_decorator(auth_prime, name='dispatch')
 class TestList(View):
@@ -501,6 +509,7 @@ class TestList(View):
         return render(request, 'test_list.html', {"InfoHandled": page_msg})
 
 
+# 作业提交状态（已提交，未提交）
 @method_decorator(auth, name='dispatch')
 class TestStatus(View):
     def get(self, request):
@@ -514,6 +523,7 @@ class TestStatus(View):
         return render(request, 'test_status.html', {"InfoHandled": page_msg})
 
 
+# 音乐下载主页
 @method_decorator(auth, name='dispatch')
 @method_decorator(auth_prime, name='dispatch')
 class Download(View):
@@ -584,6 +594,7 @@ class Download(View):
             return render(request, 'music_download.html')
 
 
+# 信息反馈主页
 @method_decorator(auth, name='dispatch')
 class InforToManager(View):
     def get(self, request):
@@ -608,5 +619,45 @@ class InforToManager(View):
                 page_msg = kv_msg("error", "反馈失败了")
                 return render(request, "feedback.html", {"InfoHandled": page_msg})
         return render(request, 'information.html', {"InfoHandled": page_msg})
+
+
+@method_decorator(auth, name='dispatch')
+class AccountManage(View):
+    def get(self, request):
+        page_msg = page_main_msg(request, "账号管理")
+        return render(request, "account_manage.html", {"InfoHandled": page_msg})
+
+    def post(self, request):
+        """返回到前端的page_msg
+        status="1":修改成功,
+        status="0":当前密码不正确，
+        status="-1":两次密码不一致，
+        status="2":程序出错。
+        """
+        current_pwd = request.POST.get("current_pwd")
+        new_pwd = request.POST.get("new_pwd")
+        new_pwd_again = request.POST.get("new_pwd_again")
+        username = request.COOKIES.get("username")
+        user_type = request.COOKIES.get("user_type")
+        if user_type in ["Root", "Manager"]:
+            obj = models.SelfUser.objects.filter(username=username, password=current_pwd)
+        else:
+            obj = models.OtherUser.objects.filter(username=username, password=current_pwd)
+        if obj:
+            if new_pwd_again == new_pwd:
+                try:
+                    obj.update(password=new_pwd)
+                    page_msg = kv_msg("status", "1")
+                    return render(request, "account_manage_status.html", {"InfoHandled": page_msg})
+                except:
+                    page_msg = kv_msg("status", "2")
+                    return render(request, "account_manage_status.html", {"InfoHandled": page_msg})
+            else:
+                page_msg = kv_msg("status", "-1")
+        else:
+
+            page_msg = kv_msg("status", "0")
+        return render(request, "account_manage_status.html", {"InfoHandled": page_msg})
+
 
 

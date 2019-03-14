@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^show_uploaded', views.ShowUploaded.as_view(), name="show_uploaded"),
     url(r'^test_list', views.TestList.as_view(), name="test_list"),
     url(r'^test_status', views.TestStatus.as_view(), name="test_status"),
+    url(r'^account_manage', views.AccountManage.as_view(), name="account_manage")
 ]
