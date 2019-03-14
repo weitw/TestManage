@@ -16,6 +16,12 @@
 
 {% block home_manage %}
     <h3 class="sub-header" style="margin: 40px 0;">提交作业</h3>
+    <div style="font-size: 15px;">
+        <h4 style="color: red;">注意事项</h4>
+        <p>请保证作业名格式为：学号+姓名+作业名</p>
+        <p>例如：B16090567张三医学信号处理一</p>
+        <p>或者：B16090567-张三-医学信号处理一</p>
+    </div>
     <div>
         <form action="{% url 'start_upload_test' %}" method="post" enctype="multipart/form-data">
             <!--<input type="file" name="upload" class="select-file" style="background: white;">

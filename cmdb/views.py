@@ -47,12 +47,27 @@ def auth(func):
     return inner
 
 
-def auth_two(func):
+# def auth_two(func):
+#     def inner(request, *args, **kwargs):
+#         v = request.COOKIES.get("from_upload")
+#         try:
+#             if not v:
+#                 return render("request", "test_upload.html")
+#         except:
+#             pass
+#         return func(request, *args, **kwargs)
+#     return inner
+
+
+def auth_prime(func):
+    """设置，有些地方如果别人直接输入网址还是可以访问的，所以就增加一个权限判断"""
     def inner(request, *args, **kwargs):
-        v = request.COOKIES.get("from_upload")
+        v = request.COOKIES.get('user_type')
         try:
             if not v:
-                return render("request", "test_upload.html")
+                return render(request, 'login.html')
+            if v not in ["Root", "Manager"]:
+                return render(request, 'home.html')
         except:
             pass
         return func(request, *args, **kwargs)
@@ -102,6 +117,7 @@ def set_user_info(request, user_type, user, max_age=300):
     page_msg = kv_msg("username", user)
     response = render(request, 'home.html', {'InfoHandled': page_msg})
     response.set_cookie('user_type', user_type, max_age=max_age)
+    response.set_cookie('username', user, max_age=max_age)
     return response
 
 
@@ -286,7 +302,7 @@ class Upload(View):
 
 
 @method_decorator(auth, name='dispatch')
-@method_decorator(auth_two, name='dispatch')
+# @method_decorator(auth_two, name='dispatch')
 class AllowUpload(View):
     # 显示允许提交的作业列表
     def get(self, request):
@@ -297,7 +313,7 @@ class AllowUpload(View):
 
 
 @method_decorator(auth, name='dispatch')
-@method_decorator(auth_two, name='dispatch')
+# @method_decorator(auth_two, name='dispatch')
 class UploadTest(View):
     # 上传作业
     def get(self, request):
@@ -361,7 +377,7 @@ class UploadTest(View):
 
 
 @method_decorator(auth, name='dispatch')
-@method_decorator(auth_two, name='dispatch')
+# @method_decorator(auth_two, name='dispatch')
 class ShowUploaded(View):
     def get(self, request):
         page_msg = page_main_msg(request, '已上传的作业')
@@ -448,6 +464,7 @@ class Manage(View):
 
 
 @method_decorator(auth, name='dispatch')
+@method_decorator(auth_prime, name='dispatch')
 class TestList(View):
     def get(self, request):
         page_msg = page_main_msg(request, "作业清单")
@@ -463,10 +480,10 @@ class TestList(View):
             zip_pack_path = download_tests(download_menu)
             logger(["要下载的文件打包的绝对路径zip_pack_path>>{}".format(zip_pack_path)])
             if zip_pack_path:
-                print(zip_pack_path)
+                # print(zip_pack_path)
                 try:
                     # 若存在，说明返回的是已经打包好的文件路径
-                    zip_file_name = re.findall(r'.*ZIP_TEST\\(.*)', zip_pack_path)[0]
+                    zip_file_name = re.findall(r'.*ZIP_TEST/(.*)', zip_pack_path)[0]
                     logger(['zip_file_name的值（打包的文件名）：>>>', zip_file_name])
                     file = open(zip_pack_path, 'rb')
                     response = FileResponse(file)
@@ -498,6 +515,7 @@ class TestStatus(View):
 
 
 @method_decorator(auth, name='dispatch')
+@method_decorator(auth_prime, name='dispatch')
 class Download(View):
     """下载音乐"""
     def get(self, request):
@@ -580,7 +598,8 @@ class InforToManager(View):
         if feedback:
             try:
                 with open(feedback_path+".txt", "a", encoding="utf-8") as f:
-                    f.write(time.strftime("%Y/%m/%d/ %H:%M:%S $ "))
+                    # f.write(time.strftime("%Y/%m/%d/ %H:%M:%S $ "))  # 时间不准？
+                    f.write("{} $ ".format(request.COOKIES.get("username")))
                     f.write(feedback)
                     f.write("\n")
                 page_msg = kv_msg("error", "感谢您的反馈，管理员已经收到")
