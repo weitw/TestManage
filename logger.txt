@@ -177,3 +177,13 @@ D:\python项目\TestMange\another\ZIP_TEST\微机实验一.zip
 
 2019-03-14 00:20:10 $管理员下载了作业>>>D:\python项目\TestMange\another\ZIP_TEST\微机实验一.zip
 
+2019-03-14 01:23:35 $student_test_info表中删除了作业>>>微机实验一
+
+2019-03-14 01:23:35 $student_test_info表中删除了作业>>>物理实验三
+
+2019-03-14 01:23:35 $删除了MEDIA_DIR中的作业>>微机实验一
+
+2019-03-14 01:23:35 $删除了MEDIA_DIR中的作业>>物理实验三
+
+2019-03-14 08:25:16 $127.0.0.1:8000
+
