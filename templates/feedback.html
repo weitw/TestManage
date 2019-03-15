@@ -1,13 +1,17 @@
 <!--用户反馈后，给用户这个页面，提示用户的反馈是否成功-->
 {% extends 'base.html' %}
 
+{% block title %}
+    <title>意见反馈 | 反馈情况</title>
+{% endblock %}
+
 {% block css-js-file %}
 
 {% endblock %}
 
 {% block home_manage %}
     <h3 style="color: blue;">意见反馈</h3>
-    <p>{{ InfoHandled.error }},给您带来不便，我们深感抱歉，管理员会尽快解决</p>
+    <p>{{ InfoHandled.error }}, 给您带来不便，我们深感抱歉，管理员会尽快解决</p>
     <a href="/cmdb/home/">返回主页</a>
 
 {% endblock %}

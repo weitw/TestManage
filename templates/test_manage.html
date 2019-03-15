@@ -2,6 +2,10 @@
 
 {% extends 'base.html' %}
 
+{% block title %}
+    <title>作业管理主页</title>
+{% endblock %}
+
 {% block css-js-file %}
     <link rel="stylesheet" type="text/css" href="/static/css/test_upload.css">
 {% endblock %}
@@ -15,7 +19,7 @@
     <p></p>
     <div class="row placeholders">
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/笔盒.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/pen_box.png" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>去这儿查看作业清单吧</p>
             {% if InfoHandled.user_type == "Ordinary" %}
@@ -25,7 +29,7 @@
             {% endif %}
         </div>
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/窗户.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/window.png" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>这儿有作业提交情况</p>
             <a href="/cmdb/test_status/">GO>></a>

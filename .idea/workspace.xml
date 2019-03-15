@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974b4634-82c6-4eed-acfc-5088c6af8582" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/account_manage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account_manage_status.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmdb/helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/Feedback/Root.txt" beforeDir="false" afterPath="$PROJECT_DIR$/another/Feedback/Root.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/Music/刘珂矣.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/Music/半壶纱.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/Music/归途.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/Music/被风吹过的街道.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/微机实验一.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/作业忘带了.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/test_forget.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/勾.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/correct.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/吐舌头狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/dog1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/田边狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/dog2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/窗户.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/window.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/笔盒.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/pen_box.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/TestUploadStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TestUploadStatus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account_manage_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_manage_status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allow_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allow_upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/music_download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/music_download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show_uploaded_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_uploaded_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/start_upload_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/start_upload_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_upload.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,56 +57,34 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="641" column="44" lean-forward="true" selection-start-line="641" selection-start-column="44" selection-end-line="641" selection-end-column="44" />
+            <state relative-caret-position="321">
+              <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#677#1047#0" />
-                <element signature="e#1070#1372#0" />
-                <element signature="e#1375#1396#0" />
-                <element signature="e#1723#2035#0" />
-                <element signature="e#1723#1927#0" />
-                <element signature="e#2073#2520#0" />
-                <element signature="e#2585#2977#0" />
-                <element signature="e#3003#4399#0" />
-                <element signature="e#6043#7737#0" />
-                <element signature="e#7803#8489#0" />
-                <element signature="e#8995#9235#0" />
-                <element signature="e#9329#10448#0" />
-                <element signature="e#10566#10828#0" />
-                <element signature="e#10945#13803#0" />
-                <element signature="e#13922#14249#0" />
-                <element signature="e#14283#15939#0" />
-                <element signature="e#15981#17026#0" />
-                <element signature="e#17095#17408#0" />
-                <element signature="e#17478#19309#0" />
-                <element signature="e#19381#19808#0" />
-                <element signature="e#19878#23463#0" />
+                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#3029#3125#0" />
+                <element signature="e#295#471#0" />
+                <element signature="e#8352#8830#0" />
+                <element signature="e#8869#9006#0" />
+                <element signature="e#2238#2328#0" />
+                <element signature="e#2971#3055#0" />
+                <element signature="e#3094#3178#0" />
+                <element signature="e#7904#8100#0" />
+                <element signature="e#3425#3636#0" />
+                <element signature="e#9804#10026#0" />
+                <element signature="e#10065#10177#0" />
+                <element signature="e#4402#4445#0" />
+                <element signature="e#15102#15217#0" />
+                <element signature="e#5271#5346#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account_manage_status.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/account_manage_status.html">
+      <file leaf-file-name="show_uploaded_test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-              <folding>
-                <element signature="e#848#867#0#HTML" expanded="true" />
-                <element signature="e#933#952#0#HTML" expanded="true" />
-                <element signature="e#1020#1039#0#HTML" expanded="true" />
-                <element signature="e#1084#1103#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="music_download.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/music_download.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -87,29 +92,34 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+            <state relative-caret-position="57">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestManage/settings.py">
+      <file leaf-file-name="TestUploadStatus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/TestUploadStatus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Root.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/another/Feedback/Root.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="music_download.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/music_download.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -121,26 +131,13 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-size:14</find>
-      <find>准备更新数据库</find>
-      <find>prin</find>
-      <find>logger</find>
-      <find>FILE_LIST</find>
-      <find>menus_files</find>
-      <find>.upload_files_list</find>
-      <find>ok.png</find>
-      <find>accordion_arrows</find>
-      <find>panel-title</find>
-      <find>blank</find>
-      <find>easyui-panel</find>
-      <find>easyui-combobox</find>
       <find>url</find>
       <find>shutil</find>
       <find>test_list中的post中出错1&gt;&gt;&gt;</find>
@@ -151,14 +148,32 @@
       <find>创建了目录</find>
       <find>访问出错，已提交管理员处理了！</find>
       <find>删除了MEDIA_DIR中的作业</find>
-      <find>media</find>
       <find>TestMange</find>
-      <find>[0:9]</find>
       <find>re</find>
       <find>findall</find>
       <find>fee</find>
       <find>sql</find>
+      <find>page_main_msg</find>
+      <find>auth_prime</find>
+      <find>auth_permis</find>
+      <find>page_msg</find>
+      <find>media</find>
+      <find>test_list中的post中出错1</find>
+      <find>download_test_handle</find>
+      <find>logger</find>
+      <find>user_cookies</find>
+      <find>cookies</find>
+      <find>[0:9]</find>
+      <find>login</find>
+      <find>upload</find>
+      <find>username</find>
+      <find>原因是作业命名不规范</find>
     </findStrings>
+    <replaceStrings>
+      <replace>mark_user_type</replace>
+      <replace>auth_permis</replace>
+      <replace>access_permissiom</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -166,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/400.html" />
-        <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/jjjjjjjj.html" />
         <option value="$PROJECT_DIR$/反反复复.html" />
         <option value="$PROJECT_DIR$/static/test_manage.css" />
@@ -189,34 +202,36 @@
         <option value="$PROJECT_DIR$/static/test_list_icon.css" />
         <option value="$PROJECT_DIR$/static/dashboard.css" />
         <option value="$PROJECT_DIR$/static/test_list_easyui.css" />
-        <option value="$PROJECT_DIR$/templates/feedback.html" />
-        <option value="$PROJECT_DIR$/templates/TestUploadStatus.html" />
-        <option value="$PROJECT_DIR$/templates/test_manage.html" />
-        <option value="$PROJECT_DIR$/templates/allow_upload.html" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/information.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/show_uploaded_test.html" />
-        <option value="$PROJECT_DIR$/templates/test_status.html" />
-        <option value="$PROJECT_DIR$/templates/test_upload.html" />
         <option value="$PROJECT_DIR$/static/css/easyui_icon.css" />
         <option value="$PROJECT_DIR$/static/css/easyui.css" />
-        <option value="$PROJECT_DIR$/templates/test_list.html" />
         <option value="D:/views.py" />
         <option value="$PROJECT_DIR$/jjj/aaa/fege.py" />
         <option value="$PROJECT_DIR$/jjj/hhh/gega.py" />
         <option value="$PROJECT_DIR$/TestMange/settings.py" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/templates/start_upload_test.html" />
         <option value="$PROJECT_DIR$/another/Feedback/Ordinary.txt" />
         <option value="$PROJECT_DIR$/another/Feedback/Root.txt" />
         <option value="$PROJECT_DIR$/cmdb/urls.py" />
         <option value="$PROJECT_DIR$/templates/AccountManage.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/music_download.html" />
         <option value="$PROJECT_DIR$/templates/account_manage.html" />
-        <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/templates/account_manage_status.html" />
+        <option value="$PROJECT_DIR$/templates/allow_upload.html" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/information.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/music_download.html" />
+        <option value="$PROJECT_DIR$/templates/show_uploaded_test.html" />
+        <option value="$PROJECT_DIR$/templates/start_upload_test.html" />
+        <option value="$PROJECT_DIR$/templates/test_list.html" />
+        <option value="$PROJECT_DIR$/templates/test_manage.html" />
+        <option value="$PROJECT_DIR$/templates/test_status.html" />
+        <option value="$PROJECT_DIR$/templates/test_upload.html" />
+        <option value="$PROJECT_DIR$/templates/TestUploadStatus.html" />
+        <option value="$PROJECT_DIR$/templates/feedback.html" />
+        <option value="$PROJECT_DIR$/cmdb/commons.py" />
+        <option value="$PROJECT_DIR$/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/cmdb/helper.py" />
       </list>
     </option>
   </component>
@@ -229,11 +244,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="3" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="y" value="6" />
     <option name="width" value="1278" />
-    <option name="height" value="778" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -241,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,29 +272,39 @@
             <path>
               <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestManage" type="462c0819:PsiDirectoryNode" />
-              <item name="another" type="462c0819:PsiDirectoryNode" />
-              <item name="Feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="cmdb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestManage" type="462c0819:PsiDirectoryNode" />
-              <item name="cmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestManage" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="医学信号处理" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestManage" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="物理实验三" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestManage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestManage" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TestManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestManage" type="462c0819:PsiDirectoryNode" />
-              <item name="TestManage" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,19 +462,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="360" width="1278" height="778" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961783" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.45539907" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15732087" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3271605" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.023148147" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3789127" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18144499" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20574887" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.8028169" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -459,7 +486,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.8028169" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,61 +496,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>498</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>210</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>476</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>478</line>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cmdb/views.py</url>
-          <line>477</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="135" />
+      <option name="time" value="156" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestManage/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestManage/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/test_manage2.html.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -562,55 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="4" column="33778" selection-start-line="4" selection-start-column="33778" selection-end-line="4" selection-end-column="33778" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/allow_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_list.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TestUploadStatus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -661,49 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/views.py" />
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="99" lean-forward="true" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/400.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -777,10 +661,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logger.txt">
+    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+        <state relative-caret-position="171">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/400.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account_manage_status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/allow_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_list.html.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/music_download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#13#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -790,96 +792,94 @@
     <entry file="file://$PROJECT_DIR$/another/Feedback/Root.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
+    <entry file="file://$PROJECT_DIR$/static/images/pen_box.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TestUploadStatus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="171">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
+    <entry file="file://$PROJECT_DIR$/logger.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-368">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+        <state relative-caret-position="57">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="641" column="44" lean-forward="true" selection-start-line="641" selection-start-column="44" selection-end-line="641" selection-end-column="44" />
+        <state relative-caret-position="321">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#677#1047#0" />
-            <element signature="e#1070#1372#0" />
-            <element signature="e#1375#1396#0" />
-            <element signature="e#1723#2035#0" />
-            <element signature="e#1723#1927#0" />
-            <element signature="e#2073#2520#0" />
-            <element signature="e#2585#2977#0" />
-            <element signature="e#3003#4399#0" />
-            <element signature="e#6043#7737#0" />
-            <element signature="e#7803#8489#0" />
-            <element signature="e#8995#9235#0" />
-            <element signature="e#9329#10448#0" />
-            <element signature="e#10566#10828#0" />
-            <element signature="e#10945#13803#0" />
-            <element signature="e#13922#14249#0" />
-            <element signature="e#14283#15939#0" />
-            <element signature="e#15981#17026#0" />
-            <element signature="e#17095#17408#0" />
-            <element signature="e#17478#19309#0" />
-            <element signature="e#19381#19808#0" />
-            <element signature="e#19878#23463#0" />
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#3029#3125#0" />
+            <element signature="e#295#471#0" />
+            <element signature="e#8352#8830#0" />
+            <element signature="e#8869#9006#0" />
+            <element signature="e#2238#2328#0" />
+            <element signature="e#2971#3055#0" />
+            <element signature="e#3094#3178#0" />
+            <element signature="e#7904#8100#0" />
+            <element signature="e#3425#3636#0" />
+            <element signature="e#9804#10026#0" />
+            <element signature="e#10065#10177#0" />
+            <element signature="e#4402#4445#0" />
+            <element signature="e#15102#15217#0" />
+            <element signature="e#5271#5346#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/account_manage.html">
+    <entry file="file://$PROJECT_DIR$/cmdb/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="548">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
           <folding>
-            <element signature="e#1173#1191#0#HTML" expanded="true" />
-            <element signature="e#1263#1281#0#HTML" expanded="true" />
+            <element signature="e#21#62#0" expanded="true" />
+            <element signature="e#486#856#0" />
+            <element signature="e#1213#1562#0" />
+            <element signature="e#1598#1710#0" />
+            <element signature="e#1721#2166#0" />
+            <element signature="e#637#1124#0" />
+            <element signature="e#2534#4228#0" />
+            <element signature="e#4407#5990#0" />
+            <element signature="e#5884#6124#0" />
+            <element signature="e#6247#6817#0" />
+            <element signature="e#6667#8323#0" />
+            <element signature="e#8522#9559#0" />
+            <element signature="e#10523#11100#0" />
+            <element signature="e#13552#14577#0" />
+            <element signature="e#14621#17789#0" />
+            <element signature="e#17836#18711#0" />
+            <element signature="e#18747#20048#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/music_download.html">
+    <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/account_manage_status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="e#848#867#0#HTML" expanded="true" />
-            <element signature="e#933#952#0#HTML" expanded="true" />
-            <element signature="e#1020#1039#0#HTML" expanded="true" />
-            <element signature="e#1084#1103#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
