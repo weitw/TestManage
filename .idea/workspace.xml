@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974b4634-82c6-4eed-acfc-5088c6af8582" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/another/ZIP_TEST/医学信号处理.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cmdb/helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/医学信号处理/B16090501医学信号处理.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/物理实验三/魏廷万B16090536物理实验三.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/another/Feedback/Root.txt" beforeDir="false" afterPath="$PROJECT_DIR$/another/Feedback/Root.txt" afterDir="false" />
@@ -11,7 +14,7 @@
       <change beforePath="$PROJECT_DIR$/another/Music/归途.m4a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/another/Music/被风吹过的街道.m4a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/微机实验一.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" beforeDir="false" afterPath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/images/作业忘带了.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/test_forget.png" afterDir="false" />
@@ -36,6 +39,8 @@
       <change beforePath="$PROJECT_DIR$/templates/test_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_status.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/tm_nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tm_uwsgi.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,7 +62,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="-336">
               <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -80,7 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_uploaded_test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmdb/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3252">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+              <folding>
+                <element signature="e#21#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_uploaded_test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -92,7 +109,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="-285">
               <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -816,9 +833,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="-285">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -828,7 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="-336">
           <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -852,34 +876,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="-3252">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#21#62#0" expanded="true" />
-            <element signature="e#486#856#0" />
-            <element signature="e#1213#1562#0" />
-            <element signature="e#1598#1710#0" />
-            <element signature="e#1721#2166#0" />
-            <element signature="e#637#1124#0" />
-            <element signature="e#2534#4228#0" />
-            <element signature="e#4407#5990#0" />
-            <element signature="e#5884#6124#0" />
-            <element signature="e#6247#6817#0" />
-            <element signature="e#6667#8323#0" />
-            <element signature="e#8522#9559#0" />
-            <element signature="e#10523#11100#0" />
-            <element signature="e#13552#14577#0" />
-            <element signature="e#14621#17789#0" />
-            <element signature="e#17836#18711#0" />
-            <element signature="e#18747#20048#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
