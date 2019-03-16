@@ -2,45 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974b4634-82c6-4eed-acfc-5088c6af8582" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/another/ZIP_TEST/医学信号处理.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmdb/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/医学信号处理/B16090501医学信号处理.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/物理实验三/魏廷万B16090536物理实验三.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Feedback/Root.txt" beforeDir="false" afterPath="$PROJECT_DIR$/another/Feedback/Root.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Music/刘珂矣.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Music/半壶纱.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Music/归途.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/Music/被风吹过的街道.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/微机实验一.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" beforeDir="false" afterPath="$PROJECT_DIR$/another/ZIP_TEST/物理实验三.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmdb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmdb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/作业忘带了.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/test_forget.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/勾.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/correct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/吐舌头狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/dog1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/田边狗.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/dog2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/窗户.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/笔盒.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/pen_box.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/TestUploadStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TestUploadStatus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/dog1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/dog2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/pen_box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/test_forget.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/window.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/account_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account_manage_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_manage_status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allow_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allow_upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/music_download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/music_download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_uploaded_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_uploaded_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/start_upload_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/start_upload_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_status.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm_nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/tm_nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm_uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tm_uwsgi.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,14 +57,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/helper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3252">
-              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
                 <element signature="e#21#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/account_manage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
+              <folding>
+                <element signature="e#853#906#0#HTML" expanded="true" />
+                <element signature="e#1088#1106#0#HTML" expanded="true" />
+                <element signature="e#1204#1222#0#HTML" expanded="true" />
+                <element signature="e#1341#1359#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_upload.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test_upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/test_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_manage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test_manage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="28" column="102" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -101,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -114,29 +137,6 @@
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestUploadStatus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/TestUploadStatus.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Root.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/another/Feedback/Root.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="music_download.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/music_download.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -230,7 +230,6 @@
         <option value="$PROJECT_DIR$/another/Feedback/Root.txt" />
         <option value="$PROJECT_DIR$/cmdb/urls.py" />
         <option value="$PROJECT_DIR$/templates/AccountManage.html" />
-        <option value="$PROJECT_DIR$/templates/account_manage.html" />
         <option value="$PROJECT_DIR$/templates/account_manage_status.html" />
         <option value="$PROJECT_DIR$/templates/allow_upload.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
@@ -238,17 +237,18 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/music_download.html" />
         <option value="$PROJECT_DIR$/templates/show_uploaded_test.html" />
-        <option value="$PROJECT_DIR$/templates/start_upload_test.html" />
         <option value="$PROJECT_DIR$/templates/test_list.html" />
-        <option value="$PROJECT_DIR$/templates/test_manage.html" />
         <option value="$PROJECT_DIR$/templates/test_status.html" />
-        <option value="$PROJECT_DIR$/templates/test_upload.html" />
         <option value="$PROJECT_DIR$/templates/TestUploadStatus.html" />
         <option value="$PROJECT_DIR$/templates/feedback.html" />
         <option value="$PROJECT_DIR$/cmdb/commons.py" />
         <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/cmdb/helper.py" />
+        <option value="$PROJECT_DIR$/templates/account_manage.html" />
+        <option value="$PROJECT_DIR$/templates/start_upload_test.html" />
+        <option value="$PROJECT_DIR$/templates/test_manage.html" />
+        <option value="$PROJECT_DIR$/templates/test_upload.html" />
       </list>
     </option>
   </component>
@@ -261,10 +261,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="6" />
-    <option name="width" value="1278" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="16" />
+    <option name="width" value="1232" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -479,7 +478,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="16" y="0" width="1232" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32961783" />
@@ -487,9 +486,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3271605" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.023148147" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14710484" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3789127" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20574887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14761092" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.8028169" />
@@ -702,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/account_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/account_manage_status.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -723,27 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/test_list.html.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -755,13 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -826,17 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_uploaded_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -877,10 +834,61 @@
     <entry file="file://$PROJECT_DIR$/cmdb/helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3252">
-          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#21#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="102" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/start_upload_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="e#1385#1438#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
+          <folding>
+            <element signature="e#853#906#0#HTML" expanded="true" />
+            <element signature="e#1088#1106#0#HTML" expanded="true" />
+            <element signature="e#1204#1222#0#HTML" expanded="true" />
+            <element signature="e#1341#1359#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>

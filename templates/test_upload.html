@@ -8,6 +8,9 @@
 
 {% block css-js-file %}
     <link rel="stylesheet" type="text/css" href="/static/css/test_upload.css">
+    <link href="/static/images/pen_box.jpg" rel="preload" as="image"/>
+    <link href="/static/images/icon-w.jpg" rel="preload" as="image"/>
+    <link href="/static/images/window.jpg" rel="preload" as="image"/>
 {% endblock %}
 
 {% block img_tip2 %}
@@ -19,19 +22,19 @@
     <p></p>
     <div class="row placeholders">
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/pen_box.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/pen_box.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>去这儿查看最新布置的作业吧</p>
             <a href="/cmdb/allow_upload/">GO>></a>
         </div>
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/test_forget.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/icon-w.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>去这儿提交你的作业吧</p>
             <a href="/cmdb/upload_test/">GO>></a>
         </div>
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/window.png" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/window.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>这儿有你已提交过的作业清单</p>
             <a href="/cmdb/show_uploaded/">GO>></a>
