@@ -10,8 +10,6 @@
     <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
-	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
 {% endblock %}
 
 {% block img_tip2 %}
@@ -21,15 +19,20 @@
 {% block home_manage %}
     <h3 class="sub-header" style="margin: 40px 0;">账号管理</h3>
     <div style="margin:20px 0;"></div>
-    <div style="width:100%;max-width:400px;padding:30px 60px;">
+    <div style="border: 1px solid #95b8e7;width: 320px;height:250px;margin: 28px 46px;">
         <form action="{% url 'account_manage' %}" method="post">
-            <div style="margin-bottom:20px;font-size: 16px;">
-                <label>当前密码<input name="current_pwd" style="width:100%" data-options="label:'当前密码'"></label>
-                <label>新密码<input type="password" name="new_pwd" style="width:100%"></label>
-                <label>确认密码<input type="password" name="new_pwd_again" style="width:100%"></label>
+            <div style="width: 70%;margin: 22px auto;">
+                <div style="margin-bottom:8px;font-size: 16px;">
+                    <label>当前密码<input name="current_pwd" style="width:100%;border: 1px solid #95b8e7;" data-options="label:'当前密码'"></label>
+                    <label>新密码<input type="password" name="new_pwd" style="width:100%;border: 1px solid #95b8e7;"></label>
+                    <label>确认密码<input type="password" name="new_pwd_again" style="width:100%;border: 1px solid #95b8e7;"></label>
+                </div>
+                <div style="font-size: 15px;">
+                    <input type="reset" value="重置" />
+                    <input type="submit" value="确认修改" />
+                </div>
             </div>
-            <input type="reset" value="重置" />
-            <input type="submit" value="确认修改" />
+
         </form>
     </div>
     <div>

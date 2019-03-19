@@ -10,10 +10,6 @@
     <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css" />
-    <link rel="preload" as="script" href="/static/js/jquery.min.js" />
-    <link rel="preload" as="script" href="/static/js/jquery.easyui.min.js" />
-	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
 
 {% endblock %}
 
@@ -32,18 +28,12 @@
         <p>例如：B16090567张三医学信号处理一</p>
         <p>或者：B16090567-张三-医学信号处理一</p>
     </div>
-    <div>
+    <div style="border: 1px solid #95b8e7;width:410px;height: 125px;margin: 25px 0;">
         <form action="{% url 'start_upload_test' %}" method="post" enctype="multipart/form-data">
-            <!--<input type="file" name="upload" class="select-file" style="background: white;">
-            <p></p>-->
-            <div style="margin:20px 0;"></div>
-            <!--下面的div没有 class="easyui-panel"就没有框-->
-            <div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
-                <input id="fb" name="upload" class="easyui-filebox" style="width:100%" data-options="prompt:'尚未选择文件'">
-                <p></p>
-                <input type="submit" value="提交">
-	        </div>
-
+            <div style="border: 1px solid #95b8e7;width: 300px;height:28px;margin: 28px 46px;">
+                <input type="file" name="upload" style="width:300px;opacity: 0.9;font-size:15px"/>
+                <input type="submit" value="提交" style="margin: 9px 0;font-size:15px">
+            </div>
         </form>
     </div>
     <div>

@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="/static/css/easyui.css">
     <link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
     <link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
-    <script type="text/javascript" src="/static/js/easyui_jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
 {% endblock %}
 
 {% if InfoHandled.user_type == "Root" %}
@@ -36,20 +34,25 @@
     </div>
     <!-- 默认搜索方式是QQ音乐，如果输入全为空，则返回当前网页 -->
     <div style="margin:20px 0;"></div>
-    <div class="easyui-panel" title="" style="width:100%;max-width:400px;padding:30px 60px;">
+    <div title="" style="border: 1px solid #95b8e7;width:530px;height: 180px;margin: 25px 0;" >
         <form action="{% url 'music' %}" method="post">
-            <div style="margin-bottom:20px;font-size: 16px;">
-                <input class="easyui-textbox" name="music_name" style="width:100%" data-options="label:'歌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名',required:true">
-            </div>
-            <div style="margin-bottom:20px;font-size: 16px;">
-                <select class="easyui-combobox" name="search_type" label="搜索方式" style="width:100%">
-                    <option></option>
-                    <option value="qq">QQ音乐</option>
-                    <option value="kg">酷狗音乐</option>
-                </select>
+            <div style="width: 60%;margin: 28px auto;">
+                <div style="margin-bottom:20px;font-size: 16px">
+                    <input class="easyui-textbox" name="music_name" placeholder="歌名" style="width:100%">
+                <div style="margin-bottom:20px;font-size: 16px">
+                <div style="margin: 10px auto;">
+                    <select name="search_type" style="width:100%;height: 27px;">
+                        <option>搜索途径</option>
+                        <option value="qq">QQ音乐</option>
+                        <option value="kg">酷狗音乐</option>
+                    </select>
+                </div>
+
             </div>
             <input type="reset" value="重置" />
             <input type="submit" value="开始搜索" />
+            </div>
+
         </form>
     </div>
 

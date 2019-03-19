@@ -23,7 +23,7 @@
 
     {% block css-js-file %} {% endblock %}
 
-    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="/static/js/ie-emulation-modes-warning.js"></script>-->
 
 </head>
 
@@ -77,12 +77,16 @@
     </div>
 </div>
 {% block js %} {% endblock %}
+<!--这些js文件好像没什么地方用到，索性直接删除了
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/static/jquery.min.js"><\/script>')</script>
 <script src="/static/js/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!--
 <script src="/static/js/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+<!--
+<script src="/static/js/ie10-viewport-bug-workaround.js"></script>-->
+
 </body>
 </html>
