@@ -273,3 +273,15 @@ D:\TestManage\another\ZIP_TEST\医学信号处理.zip
 
 2019-03-16 00:13:06 $127.0.0.1:8000
 
+2019-03-17 23:17:34 $auto_update_mysql函数中出错3>>(1146, "Table 'test_manage.cmdb_studenttestinfo' doesn't exist")
+
+2019-03-17 23:17:34 $update_media中出错>>(1146, "Table 'test_manage.cmdb_studenttestinfo' doesn't exist")
+
+2019-03-17 23:17:49 $auto_update_mysql函数中出错3>>(1146, "Table 'test_manage.cmdb_studenttestinfo' doesn't exist")
+
+2019-03-17 23:17:49 $update_media中出错>>(1146, "Table 'test_manage.cmdb_studenttestinfo' doesn't exist")
+
+2019-03-17 23:32:30 $删除了MEDIA_DIR中的作业>>医学信号处理
+
+2019-03-17 23:32:30 $删除了MEDIA_DIR中的作业>>物理实验三
+

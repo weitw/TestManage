@@ -7,15 +7,21 @@
 {% endblock %}
 
 {% block css-js-file %}
-    <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css" />
+    <link rel="preload" as="script" href="/static/js/jquery.min.js" />
+    <link rel="preload" as="script" href="/static/js/jquery.easyui.min.js" />
 	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
+
 {% endblock %}
 
 {% block img_tip2 %}
     <img src="/static/images/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+    <link href="/static/css/start_upload_test_easyui.css" rel="preload" as="style"/>
+    <link href="/static/css/bootstrap.min.css" rel="preload" as="style"/>
+    <link href="/static/css/easyui.css" rel="preload" as="style"/>
 {% endblock %}
 
 {% block home_manage %}

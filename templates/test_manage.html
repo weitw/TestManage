@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block css-js-file %}
-    <link href="/static/images/pen_box.jpg" rel="preload" as="image"/>
-    <link href="/static/images/window.jpg" rel="preload" as="image"/>
+    <link href="/static/images/f.png" rel="preload" as="image"/>
+    <link href="/static/images/infor.jfif" rel="preload" as="image"/>
     <link rel="stylesheet" type="text/css" href="/static/css/test_upload.css">
 {% endblock %}
 
@@ -21,7 +21,7 @@
     <p></p>
     <div class="row placeholders">
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/pen_box.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/f.png" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>去这儿查看作业清单吧</p>
             {% if InfoHandled.user_type == "Ordinary" %}
@@ -31,7 +31,7 @@
             {% endif %}
         </div>
         <div class="col-xs-6 col-sm-3 placeholder" style="margin: 30px 30px;">
-            <img src="/static/images/window.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+            <img src="/static/images/infor.jfif" class="img-responsive" alt="Generic placeholder thumbnail">
             <p></p>
             <p>这儿有作业提交情况</p>
             <a href="/cmdb/test_status/">GO>></a>

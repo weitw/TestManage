@@ -449,13 +449,13 @@
 
 .window .window-header {
     background: transparent;
-    padding: 0px 0px 6px 0px;
+    padding: 0 0 6px 0;
 }
 
 .window .window-body {
     border-width: 1px;
     border-style: solid;
-    border-top-width: 0px;
+    border-top-width: 0;
 }
 
 .window .window-body-noheader {
@@ -562,7 +562,7 @@
 }
 
 .window-thinborder .window-body {
-    border-width: 0px;
+    border-width: 0;
 }
 
 .window-thinborder .window-footer {

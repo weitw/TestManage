@@ -8,11 +8,17 @@ class SelfUser(models.Model):
     username = models.CharField(max_length=32)
     password = models.CharField(max_length=32)
 
+    class Meta:
+        db_table = "selfuser"
+
 
 class OtherUser(models.Model):
     """普通用户的表"""
     username = models.CharField(max_length=20)
     password = models.CharField(max_length=20)
+
+    class Meta:
+        db_table = "otheruser"
 
 
 class StudentInfo(models.Model):
@@ -20,10 +26,16 @@ class StudentInfo(models.Model):
     stu_num = models.CharField(max_length=10)
     stu_name = models.CharField(max_length=10)
 
+    class Meta:
+        db_table = "studentinfo"
+
 
 class HashTest(models.Model):
     """作业和建表字段的使用，例如,test_hash=test1, test_title=微机实验一"""
     test = models.CharField(max_length=20)
+
+    class Meta:
+        db_table = "hashtest"
 
 
 class StudentTestInfo(models.Model):
@@ -62,10 +74,16 @@ class StudentTestInfo(models.Model):
     stu_31 = models.CharField(max_length=5, default="0", null=True)
     stu_32 = models.CharField(max_length=5, default="0", null=True)
 
+    class Meta:
+        db_table = "studenttestinfo"
+
 
 class UserIP(models.Model):
     """用户的IP，当他访问时获取，在其下载音乐时调用"""
     remote_addr = models.CharField(max_length=30)
+
+    class Meta:
+        db_table = "userip"
 
 
 

@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'TestManage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_manage',  # 数据库名
+        'NAME': 'mytest',  # 数据库名
         'USER': 'root',
         'PASSWORD': os.environ['DATABASE_PASSWORD'],  # DATABASE_PASSWORD是数据库密码，已经添加在环境变量中了
         # 'PASSWORD': PASSWORD,
