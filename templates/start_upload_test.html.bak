@@ -1,0 +1,54 @@
+<!--用户在这个页面上传他的文件-->
+
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>作业提交 | 提交</title>
+{% endblock %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/css/start_upload_test_easyui.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css" />
+    <link rel="preload" as="script" href="/static/js/jquery.min.js" />
+    <link rel="preload" as="script" href="/static/js/jquery.easyui.min.js" />
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
+
+{% endblock %}
+
+{% block img_tip2 %}
+    <img src="/static/images/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+    <link href="/static/css/start_upload_test_easyui.css" rel="preload" as="style"/>
+    <link href="/static/css/bootstrap.min.css" rel="preload" as="style"/>
+    <link href="/static/css/easyui.css" rel="preload" as="style"/>
+{% endblock %}
+
+{% block home_manage %}
+    <h3 class="sub-header" style="margin: 40px 0;">提交作业</h3>
+    <div style="font-size: 15px;">
+        <h4 style="color: red;">注意事项</h4>
+        <p>请保证作业名格式为：学号+姓名+作业名</p>
+        <p>例如：B16090567张三医学信号处理一</p>
+        <p>或者：B16090567-张三-医学信号处理一</p>
+    </div>
+    <div>
+        <form action="{% url 'start_upload_test' %}" method="post" enctype="multipart/form-data">
+            <!--<input type="file" name="upload" class="select-file" style="background: white;">
+            <p></p>-->
+            <div style="margin:20px 0;"></div>
+            <!--下面的div没有 class="easyui-panel"就没有框-->
+            <div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
+                <input id="fb" name="upload" class="easyui-filebox" style="width:100%" data-options="prompt:'尚未选择文件'">
+                <p></p>
+                <input type="submit" value="提交">
+	        </div>
+
+        </form>
+    </div>
+    <div>
+        <p></p>
+        <a href="/cmdb/test_upload/">返回</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+<!--音乐下载页面-->
+
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>音乐下载主页</title>
+{% endblock %}
+
+{% block css-js-file %}
+    <link rel="stylesheet" type="text/css" href="/static/css/music-download.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui2.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui_icon.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/easyui_demo.css">
+    <script type="text/javascript" src="/static/js/easyui_jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.easyui.min.js"></script>
+{% endblock %}
+
+{% if InfoHandled.user_type == "Root" %}
+    {% block img_tip5 %}
+        <img src="/static/images/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+    {% endblock %}
+{% else %}
+    {% block img_tip7 %}
+        <img src="/static/images/tip.png" style="display: inline-block;float: right;margin: -29px 29px;">
+    {% endblock %}
+{% endif %}
+
+{% block home_manage %}
+    <h3 style="color: blue;margin: 40px 0;">音乐下载主页</h3>
+    <div style="font-size: 15px;">
+        <h4 style="color: red;">注意事项</h4>
+        <p>1.不要频繁的下载，连续几次下载之后，请休息一会儿再开始</p>
+        <p>2.如果未选择搜索方式，默认是用QQ音乐下载，但是结果可能会有差异</p>
+        <p>3.如果下载的音乐不能播放，或者音乐名不正确，那么抱歉，我也没办法QAQ</p>
+    </div>
+    <!-- 默认搜索方式是QQ音乐，如果输入全为空，则返回当前网页 -->
+    <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="" style="width:100%;max-width:400px;padding:30px 60px;">
+        <form action="{% url 'music' %}" method="post">
+            <div style="margin-bottom:20px;font-size: 16px;">
+                <input class="easyui-textbox" name="music_name" style="width:100%" data-options="label:'歌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名',required:true">
+            </div>
+            <div style="margin-bottom:20px;font-size: 16px;">
+                <select class="easyui-combobox" name="search_type" label="搜索方式" style="width:100%">
+                    <option></option>
+                    <option value="qq">QQ音乐</option>
+                    <option value="kg">酷狗音乐</option>
+                </select>
+            </div>
+            <input type="reset" value="重置" />
+            <input type="submit" value="开始搜索" />
+        </form>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style="margin: 0 -30px;font-size: 16px">
+        <h4 class="sub-header">为你找到以下内容</h4>
+        <div>
+            <form action="music_download.html" method="post">
+                <input type="text" name="platform" value="{{ InfoHandled.user_request.platform }}" style="display: none;">
+                <input type="text" name="remusic_name" value="{{ InfoHandled.user_request.music_name }}" style="display: none;">
+                <label>选择要下载歌曲的序号：</label>
+                <input type="number" name="index"/>
+                <input type="submit" value="下载"/>
+            </form>
+        </div>
+
+        <div class="table-responsive">
+            <form action="music_download.html" method="post">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>歌手</th>
+                        <th>歌名</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ InfoHandled.error_msg.error }}  <!--如果这个值存在，说明爬取信息失败，那么久将失败信息给用户-->
+                    {% for song in InfoHandled.song_list %}
+                        <tr>
+                            <td>{{ song.song_index }}</td>
+                            <td>{{ song.singer }}</td>
+                            <td><a href="{{ song.song_url }}" target="_Blank">{{ song.song_name }}</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+{% endblock %}
