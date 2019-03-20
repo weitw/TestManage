@@ -80,6 +80,7 @@ class StudentTestInfo(models.Model):
 
 class UserIP(models.Model):
     """用户的IP，当他访问时获取，在其下载音乐时调用"""
+    username = models.CharField(max_length=30, null=True, default="*")
     remote_addr = models.CharField(max_length=30)
 
     class Meta:

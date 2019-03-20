@@ -90,6 +90,20 @@ def set_user_info(request, user_type, user):
     return response
 
 
+def add_user_ip(request):
+    user_ip_list = models.UserIP.objects.all()
+    username = request.COOKIES.get("username")
+    user_ip = request.META['HTTP_HOST']
+    ips_list_in_sql = []
+    for obj in user_ip_list:
+        ips_list_in_sql.append(obj.remote_addr)
+    if user_ip not in ips_list_in_sql:
+        try:
+            models.UserIP.objects.create(username=username, remote_addr=user_ip)
+        except Exception as e:
+            logger("写入用户IP时出错>>".format(e))
+
+
 def update_media():
     """对比当前的MEDIA_DIR中的作业和数据可hashtest中的作业是否一致，若不一致，则修改MEDIA_DIR中的作业目录"""
     try:
@@ -271,6 +285,8 @@ def login_handle(request, user, pwd):
                 error_msg = "用户名或密码错误！"
                 MAIN_MSG['error_msg'] = error_msg
                 response = render(request, 'login.html', {"InfoHandled": MAIN_MSG})
+        if "错误" not in MAIN_MSG.get("error_msg", None):
+            add_user_ip(request)  # 只有用户成功登陆才记录他的IP地址
         return response
     except:
         response = render(request, 'login.html')
